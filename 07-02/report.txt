@@ -1,0 +1,166 @@
+CEC CS 18 c08
+Amal Ramachandran
+--------------------------------
+#1: sorting
+---------------------------------
+Command/Shell script/Program name
+sort -n fn
+sort -nk7 fn
+sort -rnk7 fn
+
+---------------------------------
+
+Input: (If relevant)
+---------------
+    
+
+   numbers
+
+   sort -n numbers
+   sort -nk7 numbers
+   sort -rnk7 numbers
+    
+--------------------------------
+Output: or Input & Output (whichever is applicable)
+0
+1
+2
+4
+5
+8
+
+
+-------------------
+0
+1
+2
+4
+5
+8
+-------------------
+8
+5
+4
+2
+1
+0
+-------------------
+Remarks if any:
+
+
+
+
+
+-------------------------------------
+-------------------------------------
+#2:cut
+
+input: 
+
+   nums
+-------------------------------------
+   cut -f2 nums
+   cut -f3 nums
+
+
+-------------------------------------
+output:
+-------------------------------------
+0
+
+
+-------------
+4	0	2
+
+
+--------------------------------------
+
+
+#3:FILE HANDLING
+
+
+INPUT1:paste a.txt b.txt
+
+
+AIM:To paste two files.
+
+a.txt: hello
+b.txt: world
+---------------------
+OUTPUT2:
+hello	world
+
+
+
+---------------------
+INPUT2:grep apple fruits.txt
+
+
+AIM:To find a text in a file.
+
+
+------------
+OUTPUT2: 
+apple
+
+
+------------------------------------------------------------------------
+
+
+#4:NETWORKING:
+-------------------------------------------------------------------------
+INPUT1:ifconfig
+
+OUTPUT:
+eth0      Link encap:Ethernet  HWaddr 00:15:58:19:23:7b  
+          inet addr:192.168.0.206  Bcast:192.168.1.255  Mask:255.255.254.0
+          inet6 addr: fe80::215:58ff:fe19:237b/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:85949 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:10969 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:14911426 (14.9 MB)  TX bytes:1748233 (1.7 MB)
+          Interrupt:17 
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:12 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:12 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:748 (748.0 B)  TX bytes:748 (748.0 B)
+ 
+---------------------------------------------------------------------------
+
+INPUT2:ip
+
+OUTPUT:
+
+ip
+Usage: ip [ OPTIONS ] OBJECT { COMMAND | help }
+       ip [ -force ] -batch filename
+where  OBJECT := { link | addr | addrlabel | route | rule | neigh | ntable |
+                   tunnel | tuntap | maddr | mroute | mrule | monitor | xfrm |
+                   netns }
+       OPTIONS := { -V[ersion] | -s[tatistics] | -d[etails] | -r[esolve] |
+                    -f[amily] { inet | inet6 | ipx | dnet | link } |
+                    -l[oops] { maximum-addr-flush-attempts } |
+                    -o[neline] | -t[imestamp] | -b[atch] [filename] |
+                    -rc[vbuf] [size]}
+
+--------------------------------------------------------------------------------
+INPUT3: route
+
+OUTPUT:
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+link-local      *               255.255.0.0     U     1000   0        0 eth0
+192.168.0.0     *               255.255.254.0   U     1      0        0 eth0
+s4c1@lab2-AcerPower-Series:~/ceccs18c08/cs232/07-02$ exit
+
+
+--------------------------------------------------------------------------------
+
+
+
