@@ -1,0 +1,77 @@
+CEC CS 18 c08
+Amal Ramachandran
+--------------------------------
+#1: Aim/task
+----------------
+           NETWORKING TASK
+---------------------------------
+Command/Shell script/Program name
+
+  ssh
+  rsync
+  scp
+
+---------------------------------
+
+Input: (If relevant)
+---------------
+ssh cs18c08@192.168.0.30
+------------------------------
+scp temp1.txt cs18c08@192.168.0.30
+------------------------------
+rsync -av 0702/ test/
+
+
+--------------------------------
+Output: or Input & Output (whichever is applicable).
+              |
+.  .    . .-. | .-..-. .--.--. .-.
+ \  \  / (.-' |(  (   )|  |  |(.-'
+  `' `'   `--'` `-'`-' '  '  ` `--'
+cs18c08@192.168.0.30's password: 
+Permission denied, please try again.
+cs18c08@192.168.0.30's password: 
+Permission denied, please try again.
+cs18c08@192.168.0.30's password: 
+Welcome to elementary OS 0.4.1 Loki (GNU/Linux 4.13.0-32-generic x86_64)
+
+ * Website:  http://elementary.io/
+
+402 packages can be updated.
+0 updates are security updates.
+
+Last login: Mon Feb 17 09:33:50 2020 from 192.168.0.209
+$ mkdir test
+$ cd test
+------------------------------------------------------------
+$ scp temp.txt.192.168.0.30
+usage: scp [-12346BCpqrv] [-c cipher] [-F ssh_config] [-i identity_file]
+           [-l limit] [-o ssh_option] [-P port] [-S program]
+           [[user@]host1:]file1 ... [[user@]host2:]file2
+------------------------------------------------------------
+$ rsync -av 0702/ test/
+sending incremental file list
+./
+report.txt
+work.txt
+
+sent 175,688 bytes  received 57 bytes  351,490.00 bytes/sec
+total size is 175,452  speedup is 1.00
+$ ls
+0702  examples.desktop	test
+$ cd test
+$ ls
+report.txt  test  work.txt
+                                                                             
+-------------------
+Remarks if any:
+
+
+
+
+
+-------------------------------------
+-------------------------------------
+
+
+

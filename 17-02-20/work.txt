@@ -1,0 +1,145 @@
+Script started on Monday 17 February 2020 03:54:36 PM IST
+]0;s4c1@lab2-AcerPower-Series: ~/ceccs18c08/cs232/17-02-20s4c1@lab2-AcerPower-Series:~/ceccs18c08/cs232/17-02-20$ ssh ceccs[K[K[K[K[K[K cs18c08@![K192.168.0.30 [A
+.
+              |
+.  .    . .-. | .-..-. .--.--. .-.
+ \  \  / (.-' |(  (   )|  |  |(.-'
+  `' `'   `--'` `-'`-' '  '  ` `--'
+cs18c08@192.168.0.30's password: 
+Permission denied, please try again.
+cs18c08@192.168.0.30's password: 
+Permission denied, please try again.
+cs18c08@192.168.0.30's password: 
+Welcome to elementary OS 0.4.1 Loki (GNU/Linux 4.13.0-32-generic x86_64)
+
+ * Website:  http://elementary.io/
+
+402 packages can be updated.
+0 updates are security updates.
+
+Last login: Mon Feb 17 09:33:50 2020 from 192.168.0.209
+$ scp     mkdior  r test
+$ cd test
+$ scp temp.txt.192.168.0.30
+usage: scp [-12346BCpqrv] [-c cipher] [-F ssh_config] [-i identity_file]
+           [-l limit] [-o ssh_option] [-P port] [-S program]
+           [[user@]host1:]file1 ... [[user@]host2:]file2
+$ scp temp.txt            ls
+$ cd ..
+$ ls
+0702  examples.desktop	test
+$ scp temp1.txt cs18c08@192.168.0.30:tesr t
+The authenticity of host '192.168.0.30 (192.168.0.30)' can't be established.
+ECDSA key fingerprint is SHA256:pkLWQEXAwg4Zdh5CXNYydUTPcU7dwDFxyzJnqJ01m/s.
+Are you sure you want to continue connecting (yes/no)? y
+Please type 'yes' or 'no': yes
+Warning: Permanently added '192.168.0.30' (ECDSA) to the list of known hosts.
+.
+              |
+.  .    . .-. | .-..-. .--.--. .-.
+ \  \  / (.-' |(  (   )|  |  |(.-'
+  `' `'   `--'` `-'`-' '  '  ` `--'
+cs18c08@192.168.0.30's password: 
+temp1.txt: No such file or directory
+$ cd ..
+$ ls
+ask	 cs17d21  cs17d44  cs18c04  cs18c27  cs18c50  ee18e07  ee18e30	ee18f19
+cec	 cs17d22  cs17d45  cs18c05  cs18c28  cs18c51  ee18e08  ee18e31	ee18f20
+cs17d00  cs17d23  cs17d46  cs18c06  cs18c29  cs18c52  ee18e09  ee18e32	ee18f21
+cs17d01  cs17d24  cs17d47  cs18c07  cs18c30  cs18c53  ee18e10  ee18e33	ee18f22
+cs17d02  cs17d25  cs17d48  cs18c08  cs18c31  cs18c54  ee18e11  ee18f00	ee18f23
+cs17d03  cs17d26  cs17d49  cs18c09  cs18c32  cs18c55  ee18e12  ee18f01	ee18f24
+cs17d04  cs17d27  cs17d50  cs18c10  cs18c33  cs18c56  ee18e13  ee18f02	ee18f25
+cs17d05  cs17d28  cs17d51  cs18c11  cs18c34  cs18c57  ee18e14  ee18f03	ee18f26
+cs17d06  cs17d29  cs17d52  cs18c12  cs18c35  cs18c58  ee18e15  ee18f04	ee18f27
+cs17d07  cs17d30  cs17d53  cs18c13  cs18c36  cs18c59  ee18e16  ee18f05	ee18f28
+cs17d08  cs17d31  cs17d54  cs18c14  cs18c37  cs18c60  ee18e17  ee18f06	ee18f29
+cs17d09  cs17d32  cs17d55  cs18c15  cs18c38  cs18c61  ee18e18  ee18f07	ee18f30
+cs17d10  cs17d33  cs17d56  cs18c16  cs18c39  cs18c62  ee18e19  ee18f08	ee18f31
+cs17d11  cs17d34  cs17d57  cs18c17  cs18c40  cs18c63  ee18e20  ee18f09	ee18f32
+cs17d12  cs17d35  cs17d58  cs18c18  cs18c41  cs18c64  ee18e21  ee18f10	ee18f33
+cs17d13  cs17d36  cs17d59  cs18c19  cs18c42  cs18c65  ee18e22  ee18f11	exam19
+cs17d14  cs17d37  cs17d60  cs18c20  cs18c43  ee18e00  ee18e23  ee18f12	hari
+cs17d15  cs17d38  cs17d61  cs18c21  cs18c44  ee18e01  ee18e24  ee18f13	ieeecec
+cs17d16  cs17d39  cs17d62  cs18c22  cs18c45  ee18e02  ee18e25  ee18f14
+cs17d17  cs17d40  cs18c00  cs18c23  cs18c46  ee18e03  ee18e26  ee18f15
+cs17d18  cs17d41  cs18c01  cs18c24  cs18c47  ee18e04  ee18e27  ee18f16
+cs17d19  cs17d42  cs18c02  cs18c25  cs18c48  ee18e05  ee18e28  ee18f17
+cs17d20  cs17d43  cs18c03  cs18c26  cs18c49  ee18e06  ee18e29  ee18f18
+$ ^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A                                                                            rsync -av 17-02-20/temp.txt                           ls
+ask	 cs17d21  cs17d44  cs18c04  cs18c27  cs18c50  ee18e07  ee18e30	ee18f19
+cec	 cs17d22  cs17d45  cs18c05  cs18c28  cs18c51  ee18e08  ee18e31	ee18f20
+cs17d00  cs17d23  cs17d46  cs18c06  cs18c29  cs18c52  ee18e09  ee18e32	ee18f21
+cs17d01  cs17d24  cs17d47  cs18c07  cs18c30  cs18c53  ee18e10  ee18e33	ee18f22
+cs17d02  cs17d25  cs17d48  cs18c08  cs18c31  cs18c54  ee18e11  ee18f00	ee18f23
+cs17d03  cs17d26  cs17d49  cs18c09  cs18c32  cs18c55  ee18e12  ee18f01	ee18f24
+cs17d04  cs17d27  cs17d50  cs18c10  cs18c33  cs18c56  ee18e13  ee18f02	ee18f25
+cs17d05  cs17d28  cs17d51  cs18c11  cs18c34  cs18c57  ee18e14  ee18f03	ee18f26
+cs17d06  cs17d29  cs17d52  cs18c12  cs18c35  cs18c58  ee18e15  ee18f04	ee18f27
+cs17d07  cs17d30  cs17d53  cs18c13  cs18c36  cs18c59  ee18e16  ee18f05	ee18f28
+cs17d08  cs17d31  cs17d54  cs18c14  cs18c37  cs18c60  ee18e17  ee18f06	ee18f29
+cs17d09  cs17d32  cs17d55  cs18c15  cs18c38  cs18c61  ee18e18  ee18f07	ee18f30
+cs17d10  cs17d33  cs17d56  cs18c16  cs18c39  cs18c62  ee18e19  ee18f08	ee18f31
+cs17d11  cs17d34  cs17d57  cs18c17  cs18c40  cs18c63  ee18e20  ee18f09	ee18f32
+cs17d12  cs17d35  cs17d58  cs18c18  cs18c41  cs18c64  ee18e21  ee18f10	ee18f33
+cs17d13  cs17d36  cs17d59  cs18c19  cs18c42  cs18c65  ee18e22  ee18f11	exam19
+cs17d14  cs17d37  cs17d60  cs18c20  cs18c43  ee18e00  ee18e23  ee18f12	hari
+cs17d15  cs17d38  cs17d61  cs18c21  cs18c44  ee18e01  ee18e24  ee18f13	ieeecec
+cs17d16  cs17d39  cs17d62  cs18c22  cs18c45  ee18e02  ee18e25  ee18f14
+cs17d17  cs17d40  cs18c00  cs18c23  cs18c46  ee18e03  ee18e26  ee18f15
+cs17d18  cs17d41  cs18c01  cs18c24  cs18c47  ee18e04  ee18e27  ee18f16
+cs17d19  cs17d42  cs18c02  cs18c25  cs18c48  ee18e05  ee18e28  ee18f17
+cs17d20  cs17d43  cs18c03  cs18c26  cs18c49  ee18e06  ee18e29  ee18f18
+$ ^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A                                                                    cd cs18c08
+$ ls
+0702  examples.desktop	test
+$ mkdir       cd test
+$ cd ..
+$ rsync -av 0702/test/
+sending incremental file list
+rsync: change_dir "/home/cs18c08//0702/test" failed: No such file or directory (2)
+
+sent 20 bytes  received 12 bytes  64.00 bytes/sec
+total size is 0  speedup is 0.00
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1183) [sender=3.1.1]
+$ ls
+0702  examples.desktop	test
+$ cd tst  est
+$ ls
+$ cd 0702
+-sh: 19: cd: can't cd to 0702
+$ rsync -av 0702/ test/
+sending incremental file list
+rsync: change_dir "/home/cs18c08/test//0702" failed: No such file or directory (2)
+created directory test
+
+sent 20 bytes  received 39 bytes  118.00 bytes/sec
+total size is 0  speedup is 0.00
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1183) [sender=3.1.1]
+$ ^[[D    cd    ls
+test
+$ cd ..
+$ ls
+0702  examples.desktop	test
+$ rsync -av 0702/ testr /
+sending incremental file list
+./
+report.txt
+work.txt
+
+sent 175,688 bytes  received 57 bytes  351,490.00 bytes/sec
+total size is 175,452  speedup is 1.00
+$ ls
+0702  examples.desktop	test
+$ cd tets \    test
+$ ls
+report.txt  test  work.txt
+$                                                                                
+Broadcast message from cs18c26@cec-workstation (somewhere) (Mon Feb 17 10:59:45
+                                                                               
+This is a ssh test message!!
+                                                                               
+exit
+Connection to 192.168.0.30 closed.
+]0;s4c1@lab2-AcerPower-Series: ~/ceccs18c08/cs232/17-02-20s4c1@lab2-AcerPower-Series:~/ceccs18c08/cs232/17-02-20$ exit
+Script done on Monday 17 February 2020 04:59:27 PM IST
