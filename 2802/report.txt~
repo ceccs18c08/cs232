@@ -1,0 +1,117 @@
+CEC CS 18 c08
+Amal Ramachandran
+
+--------------------------------
+#1: scripting task
+---------------------------------
+Command/Shell script/Program name
+      
+
+      script.sh
+
+
+---------------------------------
+
+Input: (If relevant)
+---------------
+  
+
+# result downloaded from ktu site
+	/SX/result_CHN.pdf
+
+	# student details file containing roll number 
+	/SX/students.txt
+
+
+
+
+--------------------------------
+Output: or Input & Output (whichever is applicable)
+
+
+ # file with cgpa/count of subjects student failed in 
+	/SX/cgpa.txt
+
+
+
+
+-------------------
+Remarks if any:
+
+    X in 'SX' is replaced with 1 or 2 for corresponding semester
+     eg: /S1/script.sh
+
+
+
+-------------------------------------
+-------------------------------------
+#2:    ftp usage(t5) 
+----------------------------------
+input : sftp cs18c08@192.168.0.30
+        lpwd
+        lcd
+        lls
+        rm <directory name>/*
+        rmdir <directory name> 
+
+output:
+ .
+              |
+.  .    . .-. | .-..-. .--.--. .-.
+ \  \  / (.-' |(  (   )|  |  |(.-'
+  `' `'   `--'` `-'`-' '  '  ` `--'
+cs18c08@192.168.0.30's password: 
+Connected to 192.168.0.30.
+
+
+mkdir amal
+sftp> ls
+0702                1702                amal                examples.desktop    
+test                
+sftp> cd amal
+
+
+lpwd
+Local working directory: /home/s4c1/ceccs18c08/cs232/2802
+sftp> lcd ..
+sftp> lpwd
+Local working directory: /home/s4c1/ceccs18c08/cs232
+sftp> lls
+02  07-02  17-02-20  2802  3101  test.txt
+
+
+
+
+sftp> put test.txt
+Uploading test.txt to /home/cs18c08/amal/test.txt
+test.txt                                      100%    9     0.0KB/s   00:00    
+sftp> lcd 3101
+sftp> lpwd
+Local working directory: /home/s4c1/ceccs18c08/cs232/3101
+sftp> ls
+test.txt  
+sftp> cd ..
+sftp> ls
+0702                1702                amal                examples.desktop    
+test                
+
+
+
+sftp> rm amal
+Removing /home/cs18c08/amal
+
+
+sftp> rm amal/*
+Removing /home/cs18c08/amal/test.txt
+sftp> ls
+0702                1702                amal                examples.desktop    
+test                
+sftp> rmdir amal
+sftp> ls
+0702                1702                examples.desktop    test                
+sftp> exit
+
+
+
+
+

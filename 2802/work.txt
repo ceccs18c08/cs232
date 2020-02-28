@@ -1,0 +1,401 @@
+Script started on Friday 28 February 2020 11:04:13 AM IST
+]0;s4c1@lab2-AcerPower-Series: ~/ceccs18c08/cs232/2802s4c1@lab2-AcerPower-Series:~/ceccs18c08/cs232/2802$ cd s1
+]0;s4c1@lab2-AcerPower-Series: ~/ceccs18c08/cs232/2802/s1s4c1@lab2-AcerPower-Series:~/ceccs18c08/cs232/2802/s1$ ls
+cgpa.txt  result_CHN.pdf  result_CHN.txt  [0m[01;32mscript.sh[0m  students.txt
+]0;s4c1@lab2-AcerPower-Series: ~/ceccs18c08/cs232/2802/s1s4c1@lab2-AcerPower-Series:~/ceccs18c08/cs232/2802/s1$ nanostudents.txt students.txt[C[C
+[?1049h[1;24r(B[m[4l[?7h[?12l[?25h[?1h=[?1h=[?1h=[39;49m[39;49m(B[m[H[2J(B[0;7m  GNU nano 2.2.6             File: students.txt                                 [3;1H(B[mCHN18CS002 ABHIITHP[4dCHN18CS003 ABIN BINU SAM[5dCHN18CS005 ADHIL SHAHANAD K K[6dCHN18CS006 ADWAITH SIVAN[7dCHN18CS007 Aju George Jacob[8dCHN18CS008 AKHIL RAVINDRAN[9dCHN18CS012 ALKA ANNA SABU[10dCHN18CS015 Amal Ramachandran[11dCHN18CS018 ANJANA S[12dCHN18CS023 ARAVIND R[13dCHN18CS024 ARJUN A[14dCHN18CS025 ARJUN G KRISHNA[15dCHN18CS028 ASHIK DAVID ABRAHAM[16dCHN18CS029 Ashna A[17dCHN18CS035 DEEPA MARIAM GEORGE[18dCHN18CS037 DEVIKA J[19dCHN18CS039 Emmanuel Shine Joseph[20dCHN18CS043 GEORGE MANI[21dCHN18CS046 GOPIKA PRADEEP[22;32H(B[0;7m[ Read 63 lines ][23d^G(B[m Get Help  (B[0;7m^O(B[m WriteOut  (B[0;7m^R(B[m Read File (B[0;7m^Y(B[m Prev Page (B[0;7m^K(B[m Cut Text  (B[0;7m^C(B[m Cur Pos[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^J(B[m Justify   (B[0;7m^W(B[m Where Is  (B[0;7m^V(B[m Next Page (B[0;7m^U(B[m UnCut Text(B[0;7m^T(B[m To Spell[3d[23d[J[24;80H[24;1H[?1049l[?1l>]0;s4c1@lab2-AcerPower-Series: ~/ceccs18c08/cs232/2802/s1s4c1@lab2-AcerPower-Series:~/ceccs18c08/cs232/2802/s1$ nano script.sh
+[?1049h[1;24r(B[m[4l[?7h[?12l[?25h[?1h=[?1h=[?1h=[39;49m[39;49m(B[m[H[2J(B[0;7m  GNU nano 2.2.6              File: script.sh                                   [3;1H(B[0m[36m#!/bin/bash[5d# Clears current screen[6d[39m(B[mclear[8d[36m# Coverts .pdf to .txt[9d[39m(B[mpdftotext -layout result_CHN.pdf result_CHN.txt[11d[36m# Separates out results of CS students[12d(B[0;1m[34mgrep[39m(B[m --no-group-separator -A3 (B[0;1m[33m"CHN18CS"[39m(B[m result_CHN.txt [32m>[39m(B[m result_cs.txt[14d[36m# Cleans up and arranges the data in organised manner[15d[39m(B[mtr  (B[0;1m[33m'\n'[39m(B[m (B[0;1m[33m' '[39m(B[m [32m<[39m(B[m result_cs.txt [32m>[39m(B[m result_nn.txt[16d(B[0;1m[34msed[39m(B[m (B[0;1m[33m's/\t//g'[39m(B[m result_nn.txt [32m>[39m(B[m result_na.txt[17dawk (B[0;1m[33m'{$1=$1;print}'[39m(B[m result_na.txt [32m>[39m(B[m result_nn.txt[18d(B[0;1m[34msed[39m(B[m (B[0;1m[33m's/CHN/\nCHN/g'[39m(B[m result_nn.txt [32m>[39m(B[m result_na.txt[19dtr  (B[0;1m[33m','[39m(B[m (B[0;1m[33m' '[39m(B[m [32m<[39m(B[m result_na.txt [32m>[39m(B[m result.txt[21d[36m# Convert Grades to Grade Points[39m[42m [22d[49m(B[0;7m[ Read 71 lines ][23d^G(B[m Get Help  (B[0;7m^O(B[m WriteOut  (B[0;7m^R(B[m Read File (B[0;7m^Y(B[m Prev Page (B[0;7m^K(B[m Cut Text  (B[0;7m^C(B[m Cur Pos[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^J(B[m Justify   (B[0;7m^W(B[m Where Is  (B[0;7m^V(B[m Next Page (B[0;7m^U(B[m UnCut Text(B[0;7m^T(B[m To Spell[3d[6d[9d[11d[12d[14d[15d[17d[18d[20d[21d7[3;21r8[10S[1;24r[12;1H(B[0;1m[34msed[39m(B[m -i (B[0;1m[33m's/(O)/ 10/g'[39m(B[m result.txt[13d(B[0;1m[34msed[39m(B[m -i (B[0;1m[33m's/(A+)/ 9/g'[39m(B[m result.txt[14d(B[0;1m[34msed[39m(B[m -i (B[0;1m[33m's/(A)/ 8.5/g'[39m(B[m result.txt[15d(B[0;1m[34msed[39m(B[m -i (B[0;1m[33m's/(B+)/ 8/g'[39m(B[m result.txt[16d(B[0;1m[34msed[39m(B[m -i (B[0;1m[33m's/(B)/ 7/g'[39m(B[m result.txt[17d(B[0;1m[34msed[39m(B[m -i (B[0;1m[33m's/(C)/ 6/g'[39m(B[m result.txt[18d(B[0;1m[34msed[39m(B[m -i (B[0;1m[33m's/(P)/ 5/g'[39m(B[m result.txt[19d(B[0;1m[34msed[39m(B[m -i (B[0;1m[33m's/(F)/ 0/g'[39m(B[m result.txt[20d(B[0;1m[34msed[39m(B[m -i (B[0;1m[33m's/(FE)/ 0/g'[39m(B[m result.txt[21d(B[0;1m[34msed[39m(B[m -i (B[0;1m[33m's/(I)/ 0/g'[39m(B[m result.txt[13d[14d[17d[22d[K[20d[3;22r[22;1H[10S[1;24r[12;1H(B[0;1m[34msed[39m(B[m -i (B[0;1m[33m's/(Absent)/ 0/g'[39m(B[m result.txt[14d[36m# Seperates gradepoints[39m[42m [15d[49m(B[mawk  '[32m{[39m[42m  [16d[49m(B[mprint (B[0;1m[31m$1[39m(B[m,(B[0;1m[31m$3[39m(B[m,(B[0;1m[31m$5[39m(B[m,(B[0;1m[31m$7[39m(B[m,(B[0;1m[31m$9[39m(B[m,(B[0;1m[31m$11[39m(B[m,(B[0;1m[31m$13[39m(B[m,(B[0;1m[31m$15[39m(B[m,(B[0;1m[31m$17[39m(B[m,(B[0;1m[31m$19[17;2H(B[0m[32m}[39m(B[m' result.txt [32m>[39m(B[m gp.txt[42m [19d[49m[36m# Computes CGPA and counts subjects failed in[20d[39m(B[mawk '[32m{[21;9H[39m(B[msum [32m=[39m(B[m 0[12d[13d[16d[19d[3;22r[22;1H[10S[1;24r[12;9Hflag [32m=[39m(B[m 0[13;9Hfails [32m=[39m(B[m 0[14;9H[32mfor([39m(B[mvar [32m=[39m(B[m2[32m;[39m(B[m var[32m<=[39m(B[mNF[32m;[39m(B[m var++[32m)[15;9H{[39m[42m       [16d[49m[32mif((B[0;1m[31m$var[39m(B[m [32m==[39m(B[m 0[32m)[39m[42m [17;17H[49m[32m{[18;25H[39m(B[mflag [32m=[39m(B[m 1[19;25Hfails [32m=[39m(B[m fails + 1[20;17H[32m}[21d[39m(B[msum +[32m=[39m(B[m (B[0;1m[31m$var[12d[39m(B[m[15d[18d[21d7[3;22r8[22d[10S[1;24r[12;9H[32m}[13d[39m(B[mcgpa [32m=[39m(B[m sum/9[14;9H[32mif[39m(B[m [32m([39m(B[mflag [32m==[39m(B[m 0[32m)[39m(B[m [32m{[39m[42m        [15;17H[49m(B[mprintf[32m((B[0;1m[33m"%s %0.2f\n"[39m(B[m,(B[0;1m[31m$1[39m(B[m,cgpa[32m)[16;9H}[17dif[39m(B[m [32m([39m(B[mflag [32m==[39m(B[m 1[32m)[39m(B[m [32m{[18;17H[39m(B[mprintf[32m((B[0;1m[33m"%s failed in %d\n"[39m(B[m,(B[0;1m[31m$1[39m(B[m,fails[32m)[19;9H}[20d}[39m(B[m' gp.txt [32m>[39m(B[m cgpa_raw.txt[14d[17d[20d[2;22r[22;1H[10S[1;24r[2;1H[K[14d[36m# adds name and roll no[15d[39m(B[mjoin students.txt  cgpa_raw.txt [32m>[39m(B[m cgpa.txt[17d[36m# Removes temperory files used to process[18d(B[0;1m[34mrm[39m(B[m result.txt[19d(B[0;1m[34mrm[39m(B[m result_cs.txt[20d(B[0;1m[34mrm[39m(B[m result_na.txt[21d(B[0;1m[34mrm[39m(B[m result_nn.txt[12d[13d[16d[19d[2;22r[22;1H[10S[1;24r[12;1H(B[0;1m[34mrm[39m(B[m gp.txt[13d(B[0;1m[34mrm[39m(B[m cgpa_raw.txt[A[14d[23d[J[24;80H[24;1H[?1049l[?1l>]0;s4c1@lab2-AcerPower-Series: ~/ceccs18c08/cs232/2802/s1s4c1@lab2-AcerPower-Series:~/ceccs18c08/cs232/2802/s1$ cat cgpa.tzt[K[Kxt
+CHN18CS002 ABHIITHP  failed in 4
+CHN18CS003 ABIN BINU SAM  9.33
+CHN18CS005 ADHIL SHAHANAD K K  8.06
+CHN18CS006 ADWAITH SIVAN  failed in 3
+CHN18CS007 Aju George Jacob  8.56
+CHN18CS008 AKHIL RAVINDRAN  7.94
+CHN18CS012 ALKA ANNA SABU  8.22
+CHN18CS015 Amal Ramachandran  failed in 4
+CHN18CS018 ANJANA S  9.33
+CHN18CS023 ARAVIND R  7.89
+CHN18CS024 ARJUN A  failed in 3
+CHN18CS025 ARJUN G KRISHNA  8.11
+CHN18CS028 ASHIK DAVID ABRAHAM  failed in 2
+CHN18CS029 Ashna A  9.17
+CHN18CS035 DEEPA MARIAM GEORGE  9.17
+CHN18CS037 DEVIKA J  8.44
+CHN18CS039 Emmanuel Shine Joseph  8.17
+CHN18CS043 GEORGE MANI  8.06
+CHN18CS046 GOPIKA PRADEEP  failed in 2
+CHN18CS047 GOPIKA SURESH  failed in 1
+CHN18CS048 GOPUDAS KM  failed in 4
+CHN18CS049 GOVIND KARTHA  8.56
+CHN18CS051 HABEL JAMES GEORGE  failed in 2
+CHN18CS052 HARI S R  failed in 5
+CHN18CS053 HELEENA ANNA VARGHESE  7.72
+CHN18CS055 lrene Maria Zachariah  failed in 1
+CHN18CS056 JALENA MATHEW  8.39
+CHN18CS057 JEENU CHACKO  8.06
+CHN18CS060 Jessal John Mammen  failed in 1
+CHN18CS061 Jesswin W Varghese  failed in 2
+CHN18CS063 Jibin Joseph  8.44
+CHN18CS064 JISA SURENDRAN  failed in 1
+CHN18CS068 Jonathan John Varghese  7.83
+CHN18CS069 JOSHENA JOSEPH  8.22
+CHN18CS071 JUSTIN JOSEPH  failed in 3
+CHN18CS073 KAVYA M  8.83
+CHN18CS076 KIRAN U  failed in 1
+CHN18CS079 Manu Mathew  7.89
+CHN18CS080 MARGRET JAISON  9.33
+CHN18CS082 Muhammad Jalal  7.89
+CHN18CS083 MUNISH KUMAR  failed in 4
+CHN18CS084 NAJEEB  7.78
+CHN18CS090 NIMMY GEORGE  failed in 5
+CHN18CS092 NIVEA GIGEN  8.83
+CHN18CS093 Nivya Maria Mathew  9.61
+CHN18CS095 PARVATHY KRISHNAN  9.11
+CHN18CS096 PARVATHY SANTHOSH  8.00
+CHN18CS097 Prayank P Nair  8.06
+CHN18CS100 Remya C  8.83
+CHN18CS101 REMYA RAVEEDRANATHAN 7.94
+CHN18CS103 RINU ELISABATH MATHEW  9.00
+CHN18CS104 Rojin K Sunny  9.11
+CHN18CS108 SARATH KUMAR S  failed in 3
+CHN18CS109 SAURAV K.J.  failed in 2
+CHN18CS110 SEBA SUSAN MATHEW  failed in 1
+CHN18CS111 SHILPA SAJAN PUNNOOSE 8.33
+CHN18CS113 SONA SEBASTIAN  8.50
+CHN18CS114 SOUMYAMOL S  failed in 1
+CHN18CS115 SREEJITH MURALI  8.72
+CHN18CS118 THEJUS R  8.06
+CHN18CS120 VISHNUSS  7.11
+CHN18CS121 VISHWANATH R ATHREY  8.22
+CHN18CS122 VIVEK K P  8.56
+]0;s4c1@lab2-AcerPower-Series: ~/ceccs18c08/cs232/2802/s1s4c1@lab2-AcerPower-Series:~/ceccs18c08/cs232/2802/s1$ cd ..
+]0;s4c1@lab2-AcerPower-Series: ~/ceccs18c08/cs232/2802s4c1@lab2-AcerPower-Series:~/ceccs18c08/cs232/2802$ cd s2
+]0;s4c1@lab2-AcerPower-Series: ~/ceccs18c08/cs232/2802/s2s4c1@lab2-AcerPower-Series:~/ceccs18c08/cs232/2802/s2$ ls
+cgpa.txt  result_CHN.pdf  result_CHN.txt  [0m[01;32mscript.sh[0m  students.txt
+]0;s4c1@lab2-AcerPower-Series: ~/ceccs18c08/cs232/2802/s2s4c1@lab2-AcerPower-Series:~/ceccs18c08/cs232/2802/s2$ nano script.sh
+[?1049h[1;24r(B[m[4l[?7h[?12l[?25h[?1h=[?1h=[?1h=[39;49m[39;49m(B[m[H[2J(B[0;7m  GNU nano 2.2.6              File: script.sh                                   [3;1H(B[0m[36m#!/bin/bash[5d# Clears current screen[6d[39m(B[mclear[8d[36m# Coverts .pdf to .txt[9d[39m(B[mpdftotext -layout result_CHN.pdf result_CHN.txt[10d[36m#!/bin/bash[12d# Clears current screen[13d[39m(B[mclear[15d[36m# Coverts .pdf to .txt[16d[39m(B[mpdftotext -layout result_CHN.pdf result_CHN.txt[18d[36m# Separates out results of CS students[19d(B[0;1m[34mgrep[39m(B[m --no-group-separator -A3 (B[0;1m[33m"CHN18CS"[39m(B[m result_CHN.txt [32m>[39m(B[m result_cs.txt[21d[36m# Cleans up and arranges the data in organised manner[22;32H[39m(B[0;7m[ Read 142 lines ][23d^G(B[m Get Help  (B[0;7m^O(B[m WriteOut  (B[0;7m^R(B[m Read File (B[0;7m^Y(B[m Prev Page (B[0;7m^K(B[m Cut Text  (B[0;7m^C(B[m Cur Pos[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^J(B[m Justify   (B[0;7m^W(B[m Where Is  (B[0;7m^V(B[m Next Page (B[0;7m^U(B[m UnCut Text(B[0;7m^T(B[m To Spell[3d[5d[6d[8d[9d[11d[12d[15d[17d[18d[21d7[3;21r8[10S[1;24r[12;1Htr  (B[0;1m[33m'\n'[39m(B[m (B[0;1m[33m' '[39m(B[m [32m<[39m(B[m result_cs.txt [32m>[39m(B[m result_nn.txt[13d(B[0;1m[34msed[39m(B[m (B[0;1m[33m's/\t//g'[39m(B[m result_nn.txt [32m>[39m(B[m result_na.txt[14dawk (B[0;1m[33m'{$1=$1;print}'[39m(B[m result_na.txt [32m>[39m(B[m result_nn.txt[15d(B[0;1m[34msed[39m(B[m (B[0;1m[33m's/CHN/\nCHN/g'[39m(B[m result_nn.txt [32m>[39m(B[m result_na.txt[16dtr  (B[0;1m[33m','[39m(B[m (B[0;1m[33m' '[39m(B[m [32m<[39m(B[m result_na.txt [32m>[39m(B[m result.txt[18d[36m# Convert Grades to Grade Points[39m[42m [19d(B[0;1m[34msed[39m(B[m -i (B[0;1m[33m's/(O)/ 10/g'[39m(B[m result.txt[20d(B[0;1m[34msed[39m(B[m -i (B[0;1m[33m's/(A+)/ 9/g'[39m(B[m result.txt[21d(B[0;1m[34msed[39m(B[m -i (B[0;1m[33m's/(A)/ 8.5/g'[39m(B[m result.txt[13d[14d[17d[22d[K[19d[20d[3;22r[22;1H[10S[1;24r[12;1H(B[0;1m[34msed[39m(B[m -i (B[0;1m[33m's/(B+)/ 8/g'[39m(B[m result.txt[13d(B[0;1m[34msed[39m(B[m -i (B[0;1m[33m's/(B)/ 7/g'[39m(B[m result.txt[14d(B[0;1m[34msed[39m(B[m -i (B[0;1m[33m's/(C)/ 6/g'[39m(B[m result.txt[15d(B[0;1m[34msed[39m(B[m -i (B[0;1m[33m's/(P)/ 5/g'[39m(B[m result.txt[16d(B[0;1m[34msed[39m(B[m -i (B[0;1m[33m's/(F)/ 0/g'[39m(B[m result.txt[17d(B[0;1m[34msed[39m(B[m -i (B[0;1m[33m's/(FE)/ 0/g'[39m(B[m result.txt[18d(B[0;1m[34msed[39m(B[m -i (B[0;1m[33m's/(I)/ 0/g'[39m(B[m result.txt[19d(B[0;1m[34msed[39m(B[m -i (B[0;1m[33m's/(Absent)/ 0/g'[39m(B[m result.txt[21d[36m# Seperates gradepoints[39m[42m [12d[49m(B[m[13d[16d[18d[19d[21d7[3;22r8[22d[10S[1;24r[12;1Hawk  '[32m{[39m[42m  [13d[49m(B[mprint (B[0;1m[31m$1[39m(B[m,(B[0;1m[31m$3[39m(B[m,(B[0;1m[31m$5[39m(B[m,(B[0;1m[31m$7[39m(B[m,(B[0;1m[31m$9[39m(B[m,(B[0;1m[31m$11[39m(B[m,(B[0;1m[31m$13[39m(B[m,(B[0;1m[31m$15[39m(B[m,(B[0;1m[31m$17[39m(B[m,(B[0;1m[31m$19[14;2H(B[0m[32m}[39m(B[m' result.txt [32m>[39m(B[m gp.txt[42m [16d[49m[36m# Computes CGPA and counts subjects failed in[17d[39m(B[mawk '[32m{[18;9H[39m(B[msum [32m=[39m(B[m 0[19;9Hflag [32m=[39m(B[m 0[20;9Hfails [32m=[39m(B[m 0[21;9H[32mfor([39m(B[mvar [32m=[39m(B[m2[32m;[39m(B[m var[32m<=[39m(B[mNF[32m;[39m(B[m var++[32m)[12d[39m(B[m[15d[18d[21d7[3;22r8[22d[10S[1;24r[12;9H[32m{[39m[42m       [13d[49m[32mif((B[0;1m[31m$var[39m(B[m [32m==[39m(B[m 0[32m)[39m[42m [14;17H[49m[32m{[15;25H[39m(B[mflag [32m=[39m(B[m 1[16;25Hfails [32m=[39m(B[m fails + 1[17;17H[32m}[18d[39m(B[msum +[32m=[39m(B[m (B[0;1m[31m$var[19;9H(B[0m[32m}[20d[39m(B[mcgpa [32m=[39m(B[m sum/9[21;9H[32mif[39m(B[m [32m([39m(B[mflag [32m==[39m(B[m 0[32m)[39m(B[m [32m{[39m[42m        [13d[49m(B[m[14d[17d[20d[2;22r[22;1H[10S[1;24r[2;1H[K[12;17Hprintf[32m((B[0;1m[33m"%s %0.2f\n"[39m(B[m,(B[0;1m[31m$1[39m(B[m,cgpa[32m)[13;9H}[14dif[39m(B[m [32m([39m(B[mflag [32m==[39m(B[m 1[32m)[39m(B[m [32m{[15;17H[39m(B[mprintf[32m((B[0;1m[33m"%s failed in %d\n"[39m(B[m,(B[0;1m[31m$1[39m(B[m,fails[32m)[16;9H}[17d}[39m(B[m' gp.txt [32m>[39m(B[m cgpa_raw.txt[21d[36m# adds name and roll no[12d[39m(B[m[13d[15d[16d[19d[21d7[3;22r8[22d[10S[1;24r[12;1Hjoin students.txt  cgpa_raw.txt [32m>[39m(B[m cgpa.txt[14d[36m# Removes temperory files used to process[15d(B[0;1m[34mrm[39m(B[m result.txt[16d(B[0;1m[34mrm[39m(B[m result_cs.txt[17d(B[0;1m[34mrm[39m(B[m result_na.txt[18d(B[0;1m[34mrm[39m(B[m result_nn.txt[19d(B[0;1m[34mrm[39m(B[m gp.txt[20d(B[0;1m[34mrm[39m(B[m cgpa_raw.txt[21d[36m# Separates out results of CS students[12d[39m(B[m[15d[18d[23d[J[24;80H[24;1H[?1049l[?1l>]0;s4c1@lab2-AcerPower-Series: ~/ceccs18c08/cs232/2802/s2s4c1@lab2-AcerPower-Series:~/ceccs18c08/cs232/2802/s2$ if [Kconfig
+eth0      Link encap:Ethernet  HWaddr 00:15:58:19:23:7b  
+          inet addr:192.168.0.199  Bcast:192.168.1.255  Mask:255.255.254.0
+          inet6 addr: fe80::215:58ff:fe19:237b/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:239230 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:46436 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:64045257 (64.0 MB)  TX bytes:7988399 (7.9 MB)
+          Interrupt:17 
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:28 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:28 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:1692 (1.6 KB)  TX bytes:1692 (1.6 KB)
+
+]0;s4c1@lab2-AcerPower-Series: ~/ceccs18c08/cs232/2802/s2s4c1@lab2-AcerPower-Series:~/ceccs18c08/cs232/2802/s2$ nao[Km[Kno[K[K[K[Kifconfig _a[K[K-a
+eth0      Link encap:Ethernet  HWaddr 00:15:58:19:23:7b  
+          inet addr:192.168.0.199  Bcast:192.168.1.255  Mask:255.255.254.0
+          inet6 addr: fe80::215:58ff:fe19:237b/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:246843 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:48044 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:66353338 (66.3 MB)  TX bytes:8291535 (8.2 MB)
+          Interrupt:17 
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:28 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:28 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:1692 (1.6 KB)  TX bytes:1692 (1.6 KB)
+
+]0;s4c1@lab2-AcerPower-Series: ~/ceccs18c08/cs232/2802/s2s4c1@lab2-AcerPower-Series:~/ceccs18c08/cs232/2802/s2$ ifconfig -a[K[K[K[K[K[K[K[K[K[K[Kcat cgpa.txt
+CHN18CS002 ABHIITHP  failed in 6
+CHN18CS003 ABIN BINU SAM  9.11
+CHN18CS005 ADHIL SHAHANAD K K  7.94
+CHN18CS006 ADWAITH SIVAN  failed in 2
+CHN18CS007 Aju George Jacob  8.56
+CHN18CS008 AKHIL RAVINDRAN  8.44
+CHN18CS012 ALKA ANNA SABU  7.94
+CHN18CS015 Amal Ramachandran  failed in 1
+CHN18CS018 ANJANA S  9.67
+CHN18CS023 ARAVIND R  8.56
+CHN18CS024 ARJUN A  failed in 4
+CHN18CS025 ARJUN G KRISHNA  8.06
+CHN18CS028 ASHIK DAVID ABRAHAM  failed in 2
+CHN18CS029 Ashna A  9.33
+CHN18CS035 DEEPA MARIAM GEORGE  9.22
+CHN18CS037 DEVIKA J  8.22
+CHN18CS039 Emmanuel Shine Joseph  8.50
+CHN18CS043 GEORGE MANI  8.61
+CHN18CS046 GOPIKA PRADEEP  7.89
+CHN18CS047 GOPIKA SURESH  failed in 1
+CHN18CS048 GOPUDAS KM  failed in 4
+CHN18CS049 GOVIND KARTHA  8.78
+CHN18CS051 HABEL JAMES GEORGE  failed in 2
+CHN18CS052 HARI S R  failed in 4
+CHN18CS053 HELEENA ANNA VARGHESE  failed in 1
+CHN18CS055 lrene Maria Zachariah  8.17
+CHN18CS056 JALENA MATHEW  8.11
+CHN18CS057 JEENU CHACKO  8.17
+CHN18CS060 Jessal John Mammen  failed in 3
+CHN18CS061 Jesswin W Varghese  failed in 5
+CHN18CS063 Jibin Joseph  8.28
+CHN18CS064 JISA SURENDRAN  failed in 1
+CHN18CS068 Jonathan John Varghese  8.11
+CHN18CS069 JOSHENA JOSEPH  8.28
+CHN18CS071 JUSTIN JOSEPH  failed in 3
+CHN18CS073 KAVYA M  8.83
+CHN18CS076 KIRAN U  failed in 1
+CHN18CS079 Manu Mathew  7.67
+CHN18CS080 MARGRET JAISON  9.44
+CHN18CS082 Muhammad Jalal  failed in 1
+CHN18CS083 MUNISH KUMAR  failed in 1
+CHN18CS084 NAJEEB  8.00
+CHN18CS090 NIMMY GEORGE  failed in 5
+CHN18CS092 NIVEA GIGEN  9.33
+CHN18CS093 Nivya Maria Mathew  9.44
+CHN18CS095 PARVATHY KRISHNAN  9.44
+CHN18CS096 PARVATHY SANTHOSH  8.11
+CHN18CS097 Prayank P Nair  failed in 2
+CHN18CS100 Remya C  failed in 1
+CHN18CS101 REMYA RAVEEDRANATHAN failed in 1
+CHN18CS103 RINU ELISABATH MATHEW  9.00
+CHN18CS104 Rojin K Sunny  8.83
+CHN18CS108 SARATH KUMAR S  7.56
+CHN18CS109 SAURAV K.J.  7.33
+CHN18CS110 SEBA SUSAN MATHEW  failed in 3
+CHN18CS111 SHILPA SAJAN PUNNOOSE 8.56
+CHN18CS113 SONA SEBASTIAN  7.89
+CHN18CS114 SOUMYAMOL S  failed in 3
+CHN18CS115 SREEJITH MURALI  failed in 1
+CHN18CS118 THEJUS R  failed in 2
+CHN18CS120 VISHNUSS  failed in 2
+CHN18CS121 VISHWANATH R ATHREY  7.78
+CHN18CS122 VIVEK K P  9.00
+]0;s4c1@lab2-AcerPower-Series: ~/ceccs18c08/cs232/2802/s2s4c1@lab2-AcerPower-Series:~/ceccs18c08/cs232/2802/s2$ gedit report.txt
+]0;s4c1@lab2-AcerPower-Series: ~/ceccs18c08/cs232/2802/s2s4c1@lab2-AcerPower-Series:~/ceccs18c08/cs232/2802/s2$ sfto[Kp@192.168.0.30
+sftp@192.168.0.30: command not found
+]0;s4c1@lab2-AcerPower-Series: ~/ceccs18c08/cs232/2802/s2s4c1@lab2-AcerPower-Series:~/ceccs18c08/cs232/2802/s2$ cd ..
+]0;s4c1@lab2-AcerPower-Series: ~/ceccs18c08/cs232/2802s4c1@lab2-AcerPower-Series:~/ceccs18c08/cs232/2802$ [K]0;s4c1@lab2-AcerPower-Series: ~/ceccs18c08/cs232/2802s4c1@lab2-AcerPower-Series:~/ceccs18c08/cs232/2802$ [K]0;s4c1@lab2-AcerPower-Series: ~/ceccs18c08/cs232/2802s4c1@lab2-AcerPower-Series:~/ceccs18c08/cs232/2802$ sftp 192.168.0.30
+.
+              |
+.  .    . .-. | .-..-. .--.--. .-.
+ \  \  / (.-' |(  (   )|  |  |(.-'
+  `' `'   `--'` `-'`-' '  '  ` `--'
+s4c1@192.168.0.30's password: 
+Permission denied, please try again.
+s4c1@192.168.0.30's password: 
+Permission denied, please try again.
+s4c1@192.168.0.30's password: 
+[1]+  Stopped                 sftp 192.168.0.30
+]0;s4c1@lab2-AcerPower-Series: ~/ceccs18c08/cs232/2802s4c1@lab2-AcerPower-Series:~/ceccs18c08/cs232/2802$ 
+sftp [K[K[K[K[K
+]0;s4c1@lab2-AcerPower-Series: ~/ceccs18c08/cs232/2802s4c1@lab2-AcerPower-Series:~/ceccs18c08/cs232/2802$ sftp cs18c082@[K[K[K8@192.168.0.30
+.
+              |
+.  .    . .-. | .-..-. .--.--. .-.
+ \  \  / (.-' |(  (   )|  |  |(.-'
+  `' `'   `--'` `-'`-' '  '  ` `--'
+cs18c08@192.168.0.30's password: 
+Connected to 192.168.0.30.
+sftp> ls
+0702                1702                examples.desktop    test                
+sftp> mkdir amal
+sftp> ls
+0702                1702                amal                examples.desktop    
+test                
+sftp> cd amal
+sftp> cat [K[K[Kput report,[K.txt
+stat report.txt: No such file or directory
+sftp> lpwd
+Local working directory: /home/s4c1/ceccs18c08/cs232/2802
+sftp> lcd ..
+sftp> lpwd
+Local working directory: /home/s4c1/ceccs18c08/cs232
+sftp> lls
+02  07-02  17-02-20  2802  3101  test.txt
+sftp> put test.txt
+Uploading test.txt to /home/cs18c08/amal/test.txt
+test.txt                                        0%    0     0.0KB/s   --:-- ETAtest.txt                                      100%    9     0.0KB/s   00:00    
+sftp> lcd 3101
+sftp> p[Klpwd
+Local working directory: /home/s4c1/ceccs18c08/cs232/3101
+sftp> ls
+test.txt  
+sftp> cd ..
+sftp> ls
+0702                1702                amal                examples.desktop    
+test                
+sftp> rmdir amal;[K
+Couldn't remove directory: Failure
+sftp> rm[K[K5[Krm [K[Krm amal
+Removing /home/cs18c08/amal
+Couldn't delete file: Failure
+sftp> rm m[Ka,[Kmal/*
+Removing /home/cs18c08/amal/test.txt
+sftp> ls
+0702                1702                amal                examples.desktop    
+test                
+sftp> lsrmrm amal/*[K[9G[3@dir amal
+sftp> ls
+0702                1702                examples.desktop    test                
+sftp> exit
+]0;s4c1@lab2-AcerPower-Series: ~/ceccs18c08/cs232/2802s4c1@lab2-AcerPower-Series:~/ceccs18c08/cs232/2802$ sftp cs18c08@192.168.0.30[Ksftp cs18c08@192.168.0.30[8P192.168.0.30cs18c08@192.168.0.30[Kgd[Kdit[K[K[Kedit report,[K.txt
+]0;s4c1@lab2-AcerPower-Series: ~/ceccs18c08/cs232/2802s4c1@lab2-AcerPower-Series:~/ceccs18c08/cs232/2802$ cd s2
+]0;s4c1@lab2-AcerPower-Series: ~/ceccs18c08/cs232/2802/s2s4c1@lab2-AcerPower-Series:~/ceccs18c08/cs232/2802/s2$ gedit report.txt
+]0;s4c1@lab2-AcerPower-Series: ~/ceccs18c08/cs232/2802/s2s4c1@lab2-AcerPower-Series:~/ceccs18c08/cs232/2802/s2$ rm report.txt
+]0;s4c1@lab2-AcerPower-Series: ~/ceccs18c08/cs232/2802/s2s4c1@lab2-AcerPower-Series:~/ceccs18c08/cs232/2802/s2$ ls
+cgpa.txt  result_CHN.pdf  result_CHN.txt  [0m[01;32mscript.sh[0m  students.txt
+]0;s4c1@lab2-AcerPower-Series: ~/ceccs18c08/cs232/2802/s2s4c1@lab2-AcerPower-Series:~/ceccs18c08/cs232/2802/s2$ cd ..
+]0;s4c1@lab2-AcerPower-Series: ~/ceccs18c08/cs232/2802s4c1@lab2-AcerPower-Series:~/ceccs18c08/cs232/2802$ gedit report.txt
+]0;s4c1@lab2-AcerPower-Series: ~/ceccs18c08/cs232/2802s4c1@lab2-AcerPower-Series:~/ceccs18c08/cs232/2802$ wget http://192.168.0.30/cs1 7d/cs17d00
+--2020-02-28 11:54:44--  http://192.168.0.30/cs17d/cs17d00
+Connecting to 192.168.0.2:3128... connected.
+Proxy request sent, awaiting response... 503 Service Unavailable
+2020-02-28 11:54:47 ERROR 503: Service Unavailable.
+
+]0;s4c1@lab2-AcerPower-Series: ~/ceccs18c08/cs232/2802s4c1@lab2-AcerPower-Series:~/ceccs18c08/cs232/2802$ gedit index.t[Khtml
+]0;s4c1@lab2-AcerPower-Series: ~/ceccs18c08/cs232/2802s4c1@lab2-AcerPower-Series:~/ceccs18c08/cs232/2802$ ls
+index.html   report.txt   [0m[01;34ms1[0m  students.txt~
+index.html~  report.txt~  [01;34ms2[0m  work.txt
+]0;s4c1@lab2-AcerPower-Series: ~/ceccs18c08/cs232/2802s4c1@lab2-AcerPower-Series:~/ceccs18c08/cs232/2802$ gedit index.html~
+]0;s4c1@lab2-AcerPower-Series: ~/ceccs18c08/cs232/2802s4c1@lab2-AcerPower-Series:~/ceccs18c08/cs232/2802$ gedit index.html
+]0;s4c1@lab2-AcerPower-Series: ~/ceccs18c08/cs232/2802s4c1@lab2-AcerPower-Series:~/ceccs18c08/cs232/2802$ rm index.html~
+]0;s4c1@lab2-AcerPower-Series: ~/ceccs18c08/cs232/2802s4c1@lab2-AcerPower-Series:~/ceccs18c08/cs232/2802$ lsa
+No command 'lsa' found, did you mean:
+ Command 'lsh' from package 'lsh-client' (universe)
+ Command 'lsw' from package 'suckless-tools' (universe)
+ Command 'lst' from package 'lustre-utils' (universe)
+ Command 'ls' from package 'coreutils' (main)
+ Command 'lua' from package 'lua50' (universe)
+ Command 'lua' from package 'lua5.1' (main)
+ Command 'lua' from package 'lua5.2' (universe)
+ Command 'lsar' from package 'unar' (universe)
+ Command 'lsat' from package 'lsat' (universe)
+ Command 'alsa' from package 'alsa-base' (main)
+ Command 'lha' from package 'lha' (multiverse)
+ Command 'lha' from package 'jlha-utils' (universe)
+ Command 'sa' from package 'acct' (main)
+lsa: command not found
+]0;s4c1@lab2-AcerPower-Series: ~/ceccs18c08/cs232/2802s4c1@lab2-AcerPower-Series:~/ceccs18c08/cs232/2802$ ls
+index.html  report.txt  report.txt~  [0m[01;34ms1[0m  [01;34ms2[0m  students.txt~  work.txt
+]0;s4c1@lab2-AcerPower-Series: ~/ceccs18c08/cs232/2802s4c1@lab2-AcerPower-Series:~/ceccs18c08/cs232/2802$ gedit students.txt~
+]0;s4c1@lab2-AcerPower-Series: ~/ceccs18c08/cs232/2802s4c1@lab2-AcerPower-Series:~/ceccs18c08/cs232/2802$ giti[K[K[K[Kcd ..
+]0;s4c1@lab2-AcerPower-Series: ~/ceccs18c08/cs232s4c1@lab2-AcerPower-Series:~/ceccs18c08/cs232$ git init
+Reinitialized existing Git repository in /home/s4c1/ceccs18c08/cs232/.git/
+]0;s4c1@lab2-AcerPower-Series: ~/ceccs18c08/cs232s4c1@lab2-AcerPower-Series:~/ceccs18c08/cs232$ git pull http://github.com/ceccs1 8c08/cs232
+remote: Enumerating objects: 17, done.[K
+remote: Counting objects:   5% (1/17)[Kremote: Counting objects:  11% (2/17)[Kremote: Counting objects:  17% (3/17)[Kremote: Counting objects:  23% (4/17)[Kremote: Counting objects:  29% (5/17)[Kremote: Counting objects:  35% (6/17)[Kremote: Counting objects:  41% (7/17)[Kremote: Counting objects:  47% (8/17)[Kremote: Counting objects:  52% (9/17)[Kremote: Counting objects:  58% (10/17)[Kremote: Counting objects:  64% (11/17)[Kremote: Counting objects:  70% (12/17)[Kremote: Counting objects:  76% (13/17)[Kremote: Counting objects:  82% (14/17)[Kremote: Counting objects:  88% (15/17)[Kremote: Counting objects:  94% (16/17)[Kremote: Counting objects: 100% (17/17)[Kremote: Counting objects: 100% (17/17), done.[K
+remote: Compressing objects:  11% (1/9)[Kremote: Compressing objects:  22% (2/9)[Kremote: Compressing objects:  33% (3/9)[Kremote: Compressing objects:  44% (4/9)[Kremote: Compressing objects:  55% (5/9)[Kremote: Compressing objects:  66% (6/9)[Kremote: Compressing objects:  77% (7/9)[Kremote: Compressing objects:  88% (8/9)[Kremote: Compressing objects: 100% (9/9)[Kremote: Compressing objects: 100% (9/9), done.[K
+Unpacking objects:   5% (1/17)   Unpacking objects:  11% (2/17)   Unpacking objects:  17% (3/17)   Unpacking objects:  23% (4/17)   Unpacking objects:  29% (5/17)   Unpacking objects:  35% (6/17)   Unpacking objects:  41% (7/17)   Unpacking objects:  47% (8/17)   Unpacking objects:  52% (9/17)   Unpacking objects:  58% (10/17)   remote: Total 17 (delta 0), reused 0 (delta 0), pack-reused 0[K
+Unpacking objects:  64% (11/17)   Unpacking objects:  70% (12/17)   Unpacking objects:  76% (13/17)   Unpacking objects:  82% (14/17)   Unpacking objects:  88% (15/17)   Unpacking objects:  94% (16/17)   Unpacking objects: 100% (17/17)   Unpacking objects: 100% (17/17), done.
+From http://github.com/ceccs18c08/cs232
+ * branch            HEAD       -> FETCH_HEAD
+error: Entry '07-02/work.txt' not uptodate. Cannot merge.
+]0;s4c1@lab2-AcerPower-Series: ~/ceccs18c08/cs232s4c1@lab2-AcerPower-Series:~/ceccs18c08/cs232$ exit
+exit
+There are stopped jobs.
+]0;s4c1@lab2-AcerPower-Series: ~/ceccs18c08/cs232s4c1@lab2-AcerPower-Series:~/ceccs18c08/cs232$ git push/[K -u origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: The remote end hung up unexpectedly
+]0;s4c1@lab2-AcerPower-Series: ~/ceccs18c08/cs232s4c1@lab2-AcerPower-Series:~/ceccs18c08/cs232$ git remote add origin https://git hub.com/ceccs18cxx/cs232[C[1P/cs232[1P/cs2320/cs2328/cs232
+]0;s4c1@lab2-AcerPower-Series: ~/ceccs18c08/cs232s4c1@lab2-AcerPower-Series:~/ceccs18c08/cs232$ git remote add origin https://githhub.com/ceccs18c08/cs232[A]0;s4c1@lab2-AcerPower-Series: ~/ceccs18c08/cs232s4c1@lab2-AcerPower-Series:~/ceccs18c08/cs232$ [C[C[C[C[8Ppush -u origin master
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+Username for 'https://github.com': cs  ceccs18c08
+Password for 'https://ceccs18c08@github.com': 
+Branch master set up to track remote branch master from origin.
+Everything up-to-date
+]0;s4c1@lab2-AcerPower-Series: ~/ceccs18c08/cs232s4c1@lab2-AcerPower-Series:~/ceccs18c08/cs232$ git push
+Username for 'https://github.com': ^[[B^[[B^[[B^[[B                ceccs18c08
+Password for 'https://ceccs18c08@github.com': 
+fatal: Authentication failed
+]0;s4c1@lab2-AcerPower-Series: ~/ceccs18c08/cs232s4c1@lab2-AcerPower-Series:~/ceccs18c08/cs232$ git push
+Username for 'https://github.com': ceccs18c08
+Password for 'https://ceccs18c08@github.com': 
+Everything up-to-date
+]0;s4c1@lab2-AcerPower-Series: ~/ceccs18c08/cs232s4c1@lab2-AcerPower-Series:~/ceccs18c08/cs232$ git push -u origin master[K[K[K[K[K[K add.
+git: 'add.' is not a git command. See 'git --help'.
+
+Did you mean this?
+	add
+]0;s4c1@lab2-AcerPower-Series: ~/ceccs18c08/cs232s4c1@lab2-AcerPower-Series:~/ceccs18c08/cs232$ git add
+Nothing specified, nothing added.
+Maybe you wanted to say 'git add .'?
+]0;s4c1@lab2-AcerPower-Series: ~/ceccs18c08/cs232s4c1@lab2-AcerPower-Series:~/ceccs18c08/cs232$ git add 2802
+]0;s4c1@lab2-AcerPower-Series: ~/ceccs18c08/cs232s4c1@lab2-AcerPower-Series:~/ceccs18c08/cs232$ git push
+Username for 'https://github.com': ceccs18c08
+Password for 'https://ceccs18c08@github.com': 
+Everything up-to-date
+]0;s4c1@lab2-AcerPower-Series: ~/ceccs18c08/cs232s4c1@lab2-AcerPower-Series:~/ceccs18c08/cs232$ ssh 1[K[K cs18c08@192.18[K68.0.30
+.
+              |
+.  .    . .-. | .-..-. .--.--. .-.
+ \  \  / (.-' |(  (   )|  |  |(.-'
+  `' `'   `--'` `-'`-' '  '  ` `--'
+cs18c08@192.168.0.30's password: 
+Welcome to elementary OS 0.4.1 Loki (GNU/Linux 4.13.0-32-generic x86_64)
+
+ * Website:  http://elementary.io/
+
+402 packages can be updated.
+0 updates are security updates.
+
+Last login: Fri Feb 28 09:41:01 2020 from 192.168.0.199
+$ exit
+Connection to 192.168.0.30 closed.
+]0;s4c1@lab2-AcerPower-Series: ~/ceccs18c08/cs232s4c1@lab2-AcerPower-Series:~/ceccs18c08/cs232$ sftp cs18c08@192.168.0.30
+.
+              |
+.  .    . .-. | .-..-. .--.--. .-.
+ \  \  / (.-' |(  (   )|  |  |(.-'
+  `' `'   `--'` `-'`-' '  '  ` `--'
+cs18c08@192.168.0.30's password: 
+Connected to 192.168.0.30.
+sftp> ls
+0702                1702                examples.desktop    test                
+sftp> mkdir 2802
+sftp> cs[Kd
+You must specify a path after a cd command.
+sftp> cd 2802
+sftp> put [K[K[Kput -r/'/home/s4c1/ceccs18c08/cs232/2802/index.html' 
+put: Invalid flag -/
+sftp> put -r/'/home/s4c1/ceccs18c08/cs232/2802/index.html'[1@0c/ce0[Pc[P'[1@ '
+Uploading /home/s4c1/ceccs18c08/cs232/2802/index.html to /home/cs18c08/2802/index.html
+/home/s4c1/ceccs18c08/cs232/2802/index.html     0%    0     0.0KB/s   --:-- ETA/home/s4c1/ceccs18c08/cs232/2802/index.html   100% 2513     2.5KB/s   00:00    
+sftp> put -r '/home/s4c1/ceccs18c08/cs232/2802/index.html'l'[K'[K'[K'[K'[K'[K'[K'[K'[K'[K'[K'[K'[K'[K'[K'[K'[K'[K'[K'[K'[K'[K'[K'[K'[K'[K'[K'[K'[K'[K'[K'[K'[K'[K'[K'[K'[K'[K'[K'[K'[K'[K'[K[K'[K'/home/s4c1/ceccs18c08/cs232/2802/report.txt' 
+Uploading /home/s4c1/ceccs18c08/cs232/2802/report.txt to /home/cs18c08/2802/report.txt
+/home/s4c1/ceccs18c08/cs232/2802/report.txt     0%    0     0.0KB/s   --:-- ETA/home/s4c1/ceccs18c08/cs232/2802/report.txt   100% 2175     2.1KB/s   00:00    
+sftp> put -r '/home/s4c1/ceccs18c08/cs232/2802/report.txt'[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K'/home/s4c1/ceccs18c08/cs232/2802/work.txt' 
+Uploading /home/s4c1/ceccs18c08/cs232/2802/work.txt to /home/cs18c08/2802/work.txt
+/home/s4c1/ceccs18c08/cs232/2802/work.txt       0%    0     0.0KB/s   --:-- ETA/home/s4c1/ceccs18c08/cs232/2802/work.txt     100%   32KB  32.0KB/s   00:00    
+sftp> ls
+index.html   report.txt   work.txt     
+sftp> lsput -r '/home/s4c1/ceccs18c08/cs232/2802/work.txt'[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kmk dir result
+sftp> cd result
+sftp> put [K[K[Kcd result[7G[3@mkdir[19G[7Gls[Kput -r '/home/s4c1/ceccs18c08/cs232/2802/work.txt'[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K'/home/s4c1/ceccs18c08/cs232/2802/s1' 
+Uploading /home/s4c1/ceccs18c08/cs232/2802/s1/ to /home/cs18c08/2802/result/s1
+/home/s4c1/ceccs18c08/cs232/2802/s1/cgpa.txt    0%    0     0.0KB/s   --:-- ETA/home/s4c1/ceccs18c08/cs232/2802/s1/cgpa.txt  100% 2146     2.1KB/s   00:00    
+/home/s4c1/ceccs18c08/cs232/2802/s1/result_CH   0%    0     0.0KB/s   --:-- ETA/home/s4c1/ceccs18c08/cs232/2802/s1/result_CH 100%   28KB  27.5KB/s   00:00    
+/home/s4c1/ceccs18c08/cs232/2802/s1/students.   0%    0     0.0KB/s   --:-- ETA/home/s4c1/ceccs18c08/cs232/2802/s1/students. 100% 1677     1.6KB/s   00:00    
+/home/s4c1/ceccs18c08/cs232/2802/s1/result_CH   0%    0     0.0KB/s   --:-- ETA/home/s4c1/ceccs18c08/cs232/2802/s1/result_CH 100%   46KB  46.1KB/s   00:00    
+/home/s4c1/ceccs18c08/cs232/2802/s1/script.sh   0%    0     0.0KB/s   --:-- ETA/home/s4c1/ceccs18c08/cs232/2802/s1/script.sh 100% 1550     1.5KB/s   00:00    
+sftp> put -r '/home/s4c1/ceccs18c08/cs232/2802/s1'[7Gcd result[K[7Gput -r '/home/s4c1/ceccs18c08/cs232/2802/s1'[K[K[Ks21[K'
+Uploading /home/s4c1/ceccs18c08/cs232/2802/s2/ to /home/cs18c08/2802/result/s2
+/home/s4c1/ceccs18c08/cs232/2802/s2/cgpa.txt    0%    0     0.0KB/s   --:-- ETA/home/s4c1/ceccs18c08/cs232/2802/s2/cgpa.txt  100% 2174     2.1KB/s   00:00    
+/home/s4c1/ceccs18c08/cs232/2802/s2/result_CH   0%    0     0.0KB/s   --:-- ETA/home/s4c1/ceccs18c08/cs232/2802/s2/result_CH 100%   26KB  26.4KB/s   00:00    
+/home/s4c1/ceccs18c08/cs232/2802/s2/students.   0%    0     0.0KB/s   --:-- ETA/home/s4c1/ceccs18c08/cs232/2802/s2/students. 100% 1677     1.6KB/s   00:00    
+/home/s4c1/ceccs18c08/cs232/2802/s2/result_CH   0%    0     0.0KB/s   --:-- ETA/home/s4c1/ceccs18c08/cs232/2802/s2/result_CH 100%   43KB  43.5KB/s   00:00    
+/home/s4c1/ceccs18c08/cs232/2802/s2/script.sh   0%    0     0.0KB/s   --:-- ETA/home/s4c1/ceccs18c08/cs232/2802/s2/script.sh 100% 3100     3.0KB/s   00:00    
+sftp> ls
+s1  s2  
+sftp> cd ..
+sftp> ls
+index.html   report.txt   result       work.txt     
+sftp> cd ..
+sftp> ls
+0702                1702                2802    
