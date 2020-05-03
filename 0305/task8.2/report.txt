@@ -1,0 +1,51 @@
+CEC CS18 C08
+Amal Ramachandran
+
+
+--------------------------------
+#1: Perl (t8) (2)
+---------------------------------
+
+Command/Shell script/Program name
+---------------------------------
+	
+     1.Helloworld program
+       #helloworld.pl
+     
+     2.program to find factorial of a number
+       #factorial.pl
+     
+     3.simple calculator
+       #simplecalculator.pl
+
+
+--------------------------------
+Output: 
+	
+	# Output of helloworld.pl
+	
+          hi,stay safe
+
+	# Output of factorial.pl
+	   Enter a number:5 
+	   factorial is 120
+
+
+	# Output of simplecalculator.pl	
+	 
+          type in 2 numbers and an operator!
+          
+           first number: 2
+           second number:13
+           the operator: +
+   
+          result of 2 + 13 = 15
+	
+
+-------------------
+Remarks if any:
+
+
+
+-------------------------------------
+-------------------------------------
