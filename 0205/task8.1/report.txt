@@ -1,0 +1,54 @@
+CEC CS 18 c08
+Amal Ramachandran
+
+--------------------------------
+#1: task 8(1)
+---------------------------------
+Package management
+
+---------------------------------
+
+Input: (If relevant)
+---------------
+   #Update local package
+    sudo apt-get update
+
+   #To install nmap
+    sudo apt-get install nmap
+
+   #To remove nmap
+    sudo apt remove nmap
+
+   #To install tasksel
+    sudo apt-get install tasksel
+
+   #To remove tasksel
+    sudo apt remove tasksel
+
+   #To install apache2
+    sudo apt-get install apache2
+
+   #To remove apache2
+    sudo apt remove apache2
+
+   #To list all packages that has been installed
+    sudo apt list > package.txt
+
+
+--------------------------------
+Output: 
+
+    #List of installed packages
+      package.txt
+
+
+-------------------
+Remarks if any:
+
+
+
+
+
+-------------------------------------
+-------------------------------------
+

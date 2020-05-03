@@ -1,0 +1,272 @@
+Script started on 2020-05-01 14:37:47+05:30 [TERM="xterm-256color" TTY="/dev/tty1" COLUMNS="120" LINES="30"]
+]0;kraken@LAPTOP-N352GHLG: ~/ceccs18c08/cs232/0105/task8.1[01;32mkraken@LAPTOP-N352GHLG[00m:[01;34m~/ceccs18c08/cs232/0105/task8.1[00m$ [K]0;kraken@LAPTOP-N352GHLG: ~/ceccs18c08/cs232/0105/task8.1[01;32mkraken@LAPTOP-N352GHLG[00m:[01;34m~/ceccs18c08/cs232/0105/task8.1[00m$ [K]0;kraken@LAPTOP-N352GHLG: ~/ceccs18c08/cs232/0105/task8.1[01;32mkraken@LAPTOP-N352GHLG[00m:[01;34m~/ceccs18c08/cs232/0105/task8.1[00m$ [K]0;kraken@LAPTOP-N352GHLG: ~/ceccs18c08/cs232/0105/task8.1[01;32mkraken@LAPTOP-N352GHLG[00m:[01;34m~/ceccs18c08/cs232/0105/task8.1[00m$ [K]0;kraken@LAPTOP-N352GHLG: ~/ceccs18c08/cs232/0105/task8.1[01;32mkraken@LAPTOP-N352GHLG[00m:[01;34m~/ceccs18c08/cs232/0105/task8.1[00m$ [K]0;kraken@LAPTOP-N352GHLG: ~/ceccs18c08/cs232/0105/task8.1[01;32mkraken@LAPTOP-N352GHLG[00m:[01;34m~/ceccs18c08/cs232/0105/task8.1[00m$ [K]0;kraken@LAPTOP-N352GHLG: ~/ceccs18c08/cs232/0105/task8.1[01;32mkraken@LAPTOP-N352GHLG[00m:[01;34m~/ceccs18c08/cs232/0105/task8.1[00m$ sudo apt-get update
+[sudo] password for kraken: 
+0% [Working]0% [Waiting for headers] [Connecting to security.ubuntu.com (91.189.91.38)]                                                                           Hit:1 http://archive.ubuntu.com/ubuntu focal InRelease
+                                                                           0% [Waiting for headers]                        Get:2 http://archive.ubuntu.com/ubuntu focal-updates InRelease [106 kB]
+0% [2 InRelease 3803 B/106 kB 4%] [Waiting for headers]                                                       Get:3 http://security.ubuntu.com/ubuntu focal-security InRelease [107 kB]
+0% [2 InRelease 42.9 kB/106 kB 40%] [3 InRelease 12.0 kB/107 kB 11%]                                                                    0% [3 InRelease 28.4 kB/107 kB 27%]                                   Hit:4 http://archive.ubuntu.com/ubuntu focal-backports InRelease
+0% [3 InRelease 36.6 kB/107 kB 34%]0% [3 InRelease 61.1 kB/107 kB 57%]                                   0% [Working]0% [Working]0% [Working]            Get:5 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages [35.5 kB]
+0% [5 Packages 3889 B/35.5 kB 11%]                                  0% [Working]0% [5 Packages store 0 B] [Waiting for headers]                                               0% [Waiting for headers]                        Get:6 http://archive.ubuntu.com/ubuntu focal-updates/main Translation-en [15.0 kB]
+0% [6 Translation-en 3889 B/15.0 kB 26%]                                        0% [Working]0% [6 Translation-en store 0 B] [Waiting for headers]                                                     Get:7 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 c-n-f Metadata [1232 B]
+0% [6 Translation-en store 0 B] [7 Commands-amd64 1004 B/1232 B 81%]                                                                    0% [6 Translation-en store 0 B]                               Get:8 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 Packages [12.3 kB]
+0% [6 Translation-en store 0 B] [8 Packages 3661 B/12.3 kB 30%]                                                               0% [6 Translation-en store 0 B]                               0% [Working]0% [7 Commands-amd64 store 0 B]                               0% [Working]0% [8 Packages store 0 B]                         0% [Working]0% [Working]0% [Working]89% [Working]             Get:9 http://security.ubuntu.com/ubuntu focal-security/main amd64 Packages [29.5 kB]
+90% [9 Packages 3889 B/29.5 kB 13%]                                   96% [Working]96% [9 Packages store 0 B]                          97% [Waiting for headers]                         Get:10 http://security.ubuntu.com/ubuntu focal-security/main Translation-en [12.2 kB]
+98% [10 Translation-en 3889 B/12.2 kB 32%]                                          100% [Working]100% [10 Translation-en store 0 B]                                  100% [Working]              Fetched 319 kB in 6s (56.4 kB/s)
+Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 6%Reading package lists... 6%Reading package lists... 9%Reading package lists... 9%Reading package lists... 10%Reading package lists... 10%Reading package lists... 10%Reading package lists... 10%Reading package lists... 51%Reading package lists... 66%Reading package lists... 66%Reading package lists... 96%Reading package lists... 96%Reading package lists... 97%Reading package lists... 97%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... Done
+]0;kraken@LAPTOP-N352GHLG: ~/ceccs18c08/cs232/0105/task8.1[01;32mkraken@LAPTOP-N352GHLG[00m:[01;34m~/ceccs18c08/cs232/0105/task8.1[00m$ sudo apt-get install nmap
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  laptop-detect libdirectfb-1.7-7 liblz1
+Use 'sudo apt autoremove' to remove them.
+The following additional packages will be installed:
+  libblas3 liblinear4 liblua5.3-0 lua-lpeg nmap-common
+Suggested packages:
+  liblinear-tools liblinear-dev ncat ndiff zenmap
+The following NEW packages will be installed:
+  libblas3 liblinear4 liblua5.3-0 lua-lpeg nmap nmap-common
+0 upgraded, 6 newly installed, 0 to remove and 10 not upgraded.
+Need to get 5669 kB of archives.
+After this operation, 26.8 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+0% [Working]0% [Connecting to archive.ubuntu.com (91.189.88.152)]                                                     Get:1 http://archive.ubuntu.com/ubuntu focal/main amd64 libblas3 amd64 3.9.0-1build1 [142 kB]
+                                                     0% [1 libblas3 12.0 kB/142 kB 8%]1% [1 libblas3 71.9 kB/142 kB 51%]                                  5% [Working]            Get:2 http://archive.ubuntu.com/ubuntu focal/universe amd64 liblinear4 amd64 2.3.0+dfsg-3build1 [41.7 kB]
+5% [2 liblinear4 3815 B/41.7 kB 9%]                                   9% [Working]            Get:3 http://archive.ubuntu.com/ubuntu focal/main amd64 liblua5.3-0 amd64 5.3.3-1.1ubuntu2 [116 kB]
+10% [3 liblua5.3-0 30.2 kB/116 kB 26%]                                      14% [Waiting for headers]                         Get:4 http://archive.ubuntu.com/ubuntu focal/universe amd64 lua-lpeg amd64 1.0.2-1 [31.4 kB]
+14% [4 lua-lpeg 2091 B/31.4 kB 7%]                                  18% [Waiting for headers]                         Get:5 http://archive.ubuntu.com/ubuntu focal/universe amd64 nmap-common all 7.80+dfsg1-2build1 [3676 kB]
+18% [5 nmap-common 7258 B/3676 kB 0%]19% [5 nmap-common 60.8 kB/3676 kB 2%]                                      20% [5 nmap-common 143 kB/3676 kB 4%]21% [5 nmap-common 204 kB/3676 kB 6%]22% [5 nmap-common 275 kB/3676 kB 7%]24% [5 nmap-common 399 kB/3676 kB 11%]26% [5 nmap-common 547 kB/3676 kB 15%]27% [5 nmap-common 613 kB/3676 kB 17%]                                    155 kB/s 30s28% [5 nmap-common 680 kB/3676 kB 19%]                                    155 kB/s 29s29% [5 nmap-common 784 kB/3676 kB 21%]                                    155 kB/s 29s31% [5 nmap-common 929 kB/3676 kB 25%]                                    155 kB/s 28s33% [5 nmap-common 1045 kB/3676 kB 28%]                                   155 kB/s 27s34% [5 nmap-common 1166 kB/3676 kB 32%]                                   155 kB/s 26s36% [5 nmap-common 1266 kB/3676 kB 34%]                                   155 kB/s 26s38% [5 nmap-common 1382 kB/3676 kB 38%]                                   155 kB/s 25s39% [5 nmap-common 1512 kB/3676 kB 41%]                                   155 kB/s 24s42% [5 nmap-common 1676 kB/3676 kB 46%]                                   155 kB/s 23s43% [5 nmap-common 1761 kB/3676 kB 48%]                                   155 kB/s 23s44% [5 nmap-common 1816 kB/3676 kB 49%]                                   155 kB/s 22s45% [5 nmap-common 1896 kB/3676 kB 52%]                                   213 kB/s 16s46% [5 nmap-common 1997 kB/3676 kB 54%]                                   213 kB/s 15s47% [5 nmap-common 2081 kB/3676 kB 57%]                                   213 kB/s 15s48% [5 nmap-common 2094 kB/3676 kB 57%]                                   213 kB/s 15s49% [5 nmap-common 2210 kB/3676 kB 60%]                                   213 kB/s 14s51% [5 nmap-common 2350 kB/3676 kB 64%]                                   213 kB/s 14s52% [5 nmap-common 2420 kB/3676 kB 66%]                                   213 kB/s 13s53% [5 nmap-common 2483 kB/3676 kB 68%]                                   213 kB/s 13s54% [5 nmap-common 2560 kB/3676 kB 70%]                                   213 kB/s 13s56% [5 nmap-common 2660 kB/3676 kB 72%]                                   213 kB/s 12s57% [5 nmap-common 2748 kB/3676 kB 75%]                                   213 kB/s 12s58% [5 nmap-common 2849 kB/3676 kB 77%]                                   213 kB/s 11s60% [5 nmap-common 2992 kB/3676 kB 81%]                                   182 kB/s 12s61% [5 nmap-common 3070 kB/3676 kB 84%]                                   182 kB/s 12s62% [5 nmap-common 3095 kB/3676 kB 84%]                                   182 kB/s 12s64% [5 nmap-common 3238 kB/3676 kB 88%]                                   182 kB/s 11s65% [5 nmap-common 3334 kB/3676 kB 91%]                                   182 kB/s 11s66% [5 nmap-common 3415 kB/3676 kB 93%]                                   182 kB/s 10s67% [5 nmap-common 3489 kB/3676 kB 95%]                                   182 kB/s 10s69% [5 nmap-common 3583 kB/3676 kB 97%]                                    182 kB/s 9s70% [5 nmap-common 3673 kB/3676 kB 100%]                                   182 kB/s 9s73% [Working]                                                              182 kB/s 9s                                                                                      Get:6 http://archive.ubuntu.com/ubuntu focal/universe amd64 nmap amd64 7.80+dfsg1-2build1 [1662 kB]
+73% [6 nmap 909 B/1662 kB 0%]                                              182 kB/s 9s74% [6 nmap 37.8 kB/1662 kB 2%]                                            182 kB/s 8s75% [6 nmap 139 kB/1662 kB 8%]                                             182 kB/s 8s76% [6 nmap 219 kB/1662 kB 13%]                                            182 kB/s 7s77% [6 nmap 276 kB/1662 kB 17%]                                            159 kB/s 8s78% [6 nmap 358 kB/1662 kB 22%]                                            159 kB/s 8s80% [6 nmap 469 kB/1662 kB 28%]                                            159 kB/s 7s81% [6 nmap 573 kB/1662 kB 34%]                                            159 kB/s 6s83% [6 nmap 710 kB/1662 kB 43%]                                            159 kB/s 5s84% [6 nmap 751 kB/1662 kB 45%]                                            159 kB/s 5s85% [6 nmap 858 kB/1662 kB 52%]                                            159 kB/s 5s87% [6 nmap 986 kB/1662 kB 59%]                                            159 kB/s 4s89% [6 nmap 1091 kB/1662 kB 66%]                                           159 kB/s 3s89% [6 nmap 1139 kB/1662 kB 69%]                                           159 kB/s 3s90% [6 nmap 1202 kB/1662 kB 72%]                                           159 kB/s 2s91% [6 nmap 1288 kB/1662 kB 77%]                                           159 kB/s 2s92% [6 nmap 1364 kB/1662 kB 82%]                                           180 kB/s 1s93% [6 nmap 1437 kB/1662 kB 86%]                                           180 kB/s 1s95% [6 nmap 1519 kB/1662 kB 91%]                                           180 kB/s 0s96% [6 nmap 1631 kB/1662 kB 98%]                                           180 kB/s 0s100% [Working]                                                             180 kB/s 0s                                                                                      Fetched 5669 kB in 32s (177 kB/s)
+Selecting previously unselected package libblas3:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 58373 files and directories currently installed.)
+Preparing to unpack .../0-libblas3_3.9.0-1build1_amd64.deb ...
+Unpacking libblas3:amd64 (3.9.0-1build1) ...
+Selecting previously unselected package liblinear4:amd64.
+Preparing to unpack .../1-liblinear4_2.3.0+dfsg-3build1_amd64.deb ...
+Unpacking liblinear4:amd64 (2.3.0+dfsg-3build1) ...
+Selecting previously unselected package liblua5.3-0:amd64.
+Preparing to unpack .../2-liblua5.3-0_5.3.3-1.1ubuntu2_amd64.deb ...
+Unpacking liblua5.3-0:amd64 (5.3.3-1.1ubuntu2) ...
+Selecting previously unselected package lua-lpeg:amd64.
+Preparing to unpack .../3-lua-lpeg_1.0.2-1_amd64.deb ...
+Unpacking lua-lpeg:amd64 (1.0.2-1) ...
+Selecting previously unselected package nmap-common.
+Preparing to unpack .../4-nmap-common_7.80+dfsg1-2build1_all.deb ...
+Unpacking nmap-common (7.80+dfsg1-2build1) ...
+Selecting previously unselected package nmap.
+Preparing to unpack .../5-nmap_7.80+dfsg1-2build1_amd64.deb ...
+Unpacking nmap (7.80+dfsg1-2build1) ...
+Setting up lua-lpeg:amd64 (1.0.2-1) ...
+Setting up libblas3:amd64 (3.9.0-1build1) ...
+update-alternatives: using /usr/lib/x86_64-linux-gnu/blas/libblas.so.3 to provide /usr/lib/x86_64-linux-gnu/libblas.so.3 (libblas.so.3-x86_64-linux-gnu) in auto mode
+Setting up nmap-common (7.80+dfsg1-2build1) ...
+Setting up liblua5.3-0:amd64 (5.3.3-1.1ubuntu2) ...
+Setting up liblinear4:amd64 (2.3.0+dfsg-3build1) ...
+Setting up nmap (7.80+dfsg1-2build1) ...
+Processing triggers for man-db (2.9.1-1) ...
+Processing triggers for libc-bin (2.31-0ubuntu9) ...
+]0;kraken@LAPTOP-N352GHLG: ~/ceccs18c08/cs232/0105/task8.1[01;32mkraken@LAPTOP-N352GHLG[00m:[01;34m~/ceccs18c08/cs232/0105/task8.1[00m$ sudo apt remove nmao[Kp
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  laptop-detect libblas3 libdirectfb-1.7-7 liblinear4 liblua5.3-0 liblz1 lua-lpeg
+  nmap-common
+Use 'sudo apt autoremove' to remove them.
+The following packages will be REMOVED:
+  nmap
+0 upgraded, 0 newly installed, 1 to remove and 10 not upgraded.
+After this operation, 4499 kB disk space will be freed.
+Do you want to continue? [Y/n] y
+
+7[0;29r8[1A(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 59261 files and directories currently installed.)
+Removing nmap (7.80+dfsg1-2build1) ...
+7[30;0f[42m[30mProgress: [  0%][49m[39m [.................................................................] 87[30;0f[42m[30mProgress: [ 33%][49m[39m [#####################............................................] 87[30;0f[42m[30mProgress: [ 67%][49m[39m [###########################################......................] 8Processing triggers for man-db (2.9.1-1) ...
+
+7[0;30r8[1A[J]0;kraken@LAPTOP-N352GHLG: ~/ceccs18c08/cs232/0105/task8.1[01;32mkraken@LAPTOP-N352GHLG[00m:[01;34m~/ceccs18c08/cs232/0105/task8.1[00m$ sudo apt-gwt[K[Ket install tasksel
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  libblas3 libdirectfb-1.7-7 liblinear4 liblua5.3-0 liblz1 lua-lpeg nmap-common
+Use 'sudo apt autoremove' to remove them.
+The following additional packages will be installed:
+  tasksel-data
+The following NEW packages will be installed:
+  tasksel tasksel-data
+0 upgraded, 2 newly installed, 0 to remove and 10 not upgraded.
+Need to get 0 B/34.0 kB of archives.
+After this operation, 289 kB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Preconfiguring packages ...
+Selecting previously unselected package tasksel-data.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 59232 files and directories currently installed.)
+Preparing to unpack .../tasksel-data_3.34ubuntu16_all.deb ...
+Unpacking tasksel-data (3.34ubuntu16) ...
+Selecting previously unselected package tasksel.
+Preparing to unpack .../tasksel_3.34ubuntu16_all.deb ...
+Unpacking tasksel (3.34ubuntu16) ...
+Setting up tasksel (3.34ubuntu16) ...
+Setting up tasksel-data (3.34ubuntu16) ...
+Processing triggers for man-db (2.9.1-1) ...
+]0;kraken@LAPTOP-N352GHLG: ~/ceccs18c08/cs232/0105/task8.1[01;32mkraken@LAPTOP-N352GHLG[00m:[01;34m~/ceccs18c08/cs232/0105/task8.1[00m$ sudo apt remove tasksel
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  laptop-detect libblas3 libdirectfb-1.7-7 liblinear4 liblua5.3-0 liblz1 lua-lpeg
+  nmap-common
+Use 'sudo apt autoremove' to remove them.
+The following packages will be REMOVED:
+  tasksel tasksel-data
+0 upgraded, 0 newly installed, 2 to remove and 10 not upgraded.
+After this operation, 289 kB disk space will be freed.
+Do you want to continue? [Y/n] y
+
+7[0;29r8[1A(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 59268 files and directories currently installed.)
+Removing tasksel-data (3.34ubuntu16) ...
+7[30;0f[42m[30mProgress: [  0%][49m[39m [.................................................................] 87[30;0f[42m[30mProgress: [ 20%][49m[39m [#############....................................................] 87[30;0f[42m[30mProgress: [ 40%][49m[39m [##########################.......................................] 8Removing tasksel (3.34ubuntu16) ...
+7[30;0f[42m[30mProgress: [ 60%][49m[39m [#######################################..........................] 87[30;0f[42m[30mProgress: [ 80%][49m[39m [####################################################.............] 8Processing triggers for man-db (2.9.1-1) ...
+
+7[0;30r8[1A[J]0;kraken@LAPTOP-N352GHLG: ~/ceccs18c08/cs232/0105/task8.1[01;32mkraken@LAPTOP-N352GHLG[00m:[01;34m~/ceccs18c08/cs232/0105/task8.1[00m$ sudo apt-get i [Knstall apache2
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  laptop-detect libblas3 libdirectfb-1.7-7 liblinear4 liblua5.3-0 liblz1 lua-lpeg
+  nmap-common
+Use 'sudo apt autoremove' to remove them.
+The following additional packages will be installed:
+  apache2-bin apache2-data apache2-utils libapr1 libaprutil1 libaprutil1-dbd-sqlite3
+  libaprutil1-ldap liblua5.2-0 ssl-cert
+Suggested packages:
+  apache2-doc apache2-suexec-pristine | apache2-suexec-custom openssl-blacklist
+The following NEW packages will be installed:
+  apache2 apache2-bin apache2-data apache2-utils libapr1 libaprutil1
+  libaprutil1-dbd-sqlite3 libaprutil1-ldap liblua5.2-0 ssl-cert
+0 upgraded, 10 newly installed, 0 to remove and 10 not upgraded.
+Need to get 1835 kB of archives.
+After this operation, 7999 kB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+0% [Working]0% [Waiting for headers]                        Get:1 http://archive.ubuntu.com/ubuntu focal/main amd64 libapr1 amd64 1.6.5-1ubuntu1 [91.4 kB]
+1% [1 libapr1 12.0 kB/91.4 kB 13%]3% [1 libapr1 63.7 kB/91.4 kB 70%]4% [1 libapr1 88.3 kB/91.4 kB 97%]                                  6% [Working]            Get:2 http://archive.ubuntu.com/ubuntu focal/main amd64 libaprutil1 amd64 1.6.1-4ubuntu2 [84.7 kB]
+6% [2 libaprutil1 3814 B/84.7 kB 5%]9% [2 libaprutil1 79.8 kB/84.7 kB 94%]                                      12% [Waiting for headers]                         Get:3 http://archive.ubuntu.com/ubuntu focal/main amd64 libaprutil1-dbd-sqlite3 amd64 1.6.1-4ubuntu2 [10.5 kB]
+12% [3 libaprutil1-dbd-sqlite3 10.5 kB/10.5 kB 100%]                                                    14% [Working]             Get:4 http://archive.ubuntu.com/ubuntu focal/main amd64 libaprutil1-ldap amd64 1.6.1-4ubuntu2 [8736 B]
+14% [4 libaprutil1-ldap 4469 B/8736 B 51%]                                          17% [Waiting for headers]                         Get:5 http://archive.ubuntu.com/ubuntu focal/main amd64 liblua5.2-0 amd64 5.2.4-1.1build3 [106 kB]
+18% [5 liblua5.2-0 40.5 kB/106 kB 38%]                                      23% [Waiting for headers]                         Get:6 http://archive.ubuntu.com/ubuntu focal/main amd64 apache2-bin amd64 2.4.41-4ubuntu3 [1179 kB]
+23% [6 apache2-bin 1513 B/1179 kB 0%]26% [6 apache2-bin 65.1 kB/1179 kB 6%]31% [6 apache2-bin 176 kB/1179 kB 15%]34% [6 apache2-bin 250 kB/1179 kB 21%]37% [6 apache2-bin 328 kB/1179 kB 28%]44% [6 apache2-bin 471 kB/1179 kB 40%]45% [6 apache2-bin 511 kB/1179 kB 43%]                                     126 kB/s 8s52% [6 apache2-bin 660 kB/1179 kB 56%]                                     126 kB/s 6s57% [6 apache2-bin 781 kB/1179 kB 66%]                                     126 kB/s 6s62% [6 apache2-bin 884 kB/1179 kB 75%]                                     126 kB/s 5s67% [6 apache2-bin 1013 kB/1179 kB 86%]                                    126 kB/s 4s73% [6 apache2-bin 1145 kB/1179 kB 97%]                                    126 kB/s 3s77% [Waiting for headers]                                                  126 kB/s 2s                                                                                      Get:7 http://archive.ubuntu.com/ubuntu focal/main amd64 apache2-data all 2.4.41-4ubuntu3 [159 kB]
+78% [7 apache2-data 24.9 kB/159 kB 16%]                                    126 kB/s 2s80% [7 apache2-data 86.2 kB/159 kB 54%]                                    126 kB/s 2s85% [Waiting for headers]                                                  126 kB/s 1s                                                                                      Get:8 http://archive.ubuntu.com/ubuntu focal/main amd64 apache2-utils amd64 2.4.41-4ubuntu3 [83.3 kB]
+86% [8 apache2-utils 3916 B/83.3 kB 5%]                                    126 kB/s 1s91% [Working]                                                              126 kB/s 0s                                                                                      Get:9 http://archive.ubuntu.com/ubuntu focal/main amd64 apache2 amd64 2.4.41-4ubuntu3 [95.5 kB]
+91% [9 apache2 310 B/95.5 kB 0%]                                           126 kB/s 0s95% [9 apache2 82.4 kB/95.5 kB 86%]                                        126 kB/s 0s97% [Waiting for headers]                                                  126 kB/s 0s                                                                                      Get:10 http://archive.ubuntu.com/ubuntu focal/main amd64 ssl-cert all 1.0.39 [17.0 kB]
+97% [10 ssl-cert 2993 B/17.0 kB 18%]                                       126 kB/s 0s100% [Working]                                                             126 kB/s 0s                                                                                      Fetched 1835 kB in 11s (162 kB/s)
+Preconfiguring packages ...
+Selecting previously unselected package libapr1:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 59232 files and directories currently installed.)
+Preparing to unpack .../0-libapr1_1.6.5-1ubuntu1_amd64.deb ...
+Unpacking libapr1:amd64 (1.6.5-1ubuntu1) ...
+Selecting previously unselected package libaprutil1:amd64.
+Preparing to unpack .../1-libaprutil1_1.6.1-4ubuntu2_amd64.deb ...
+Unpacking libaprutil1:amd64 (1.6.1-4ubuntu2) ...
+Selecting previously unselected package libaprutil1-dbd-sqlite3:amd64.
+Preparing to unpack .../2-libaprutil1-dbd-sqlite3_1.6.1-4ubuntu2_amd64.deb ...
+Unpacking libaprutil1-dbd-sqlite3:amd64 (1.6.1-4ubuntu2) ...
+Selecting previously unselected package libaprutil1-ldap:amd64.
+Preparing to unpack .../3-libaprutil1-ldap_1.6.1-4ubuntu2_amd64.deb ...
+Unpacking libaprutil1-ldap:amd64 (1.6.1-4ubuntu2) ...
+Selecting previously unselected package liblua5.2-0:amd64.
+Preparing to unpack .../4-liblua5.2-0_5.2.4-1.1build3_amd64.deb ...
+Unpacking liblua5.2-0:amd64 (5.2.4-1.1build3) ...
+Selecting previously unselected package apache2-bin.
+Preparing to unpack .../5-apache2-bin_2.4.41-4ubuntu3_amd64.deb ...
+Unpacking apache2-bin (2.4.41-4ubuntu3) ...
+Selecting previously unselected package apache2-data.
+Preparing to unpack .../6-apache2-data_2.4.41-4ubuntu3_all.deb ...
+Unpacking apache2-data (2.4.41-4ubuntu3) ...
+Selecting previously unselected package apache2-utils.
+Preparing to unpack .../7-apache2-utils_2.4.41-4ubuntu3_amd64.deb ...
+Unpacking apache2-utils (2.4.41-4ubuntu3) ...
+Selecting previously unselected package apache2.
+Preparing to unpack .../8-apache2_2.4.41-4ubuntu3_amd64.deb ...
+Unpacking apache2 (2.4.41-4ubuntu3) ...
+Selecting previously unselected package ssl-cert.
+Preparing to unpack .../9-ssl-cert_1.0.39_all.deb ...
+Unpacking ssl-cert (1.0.39) ...
+Setting up libapr1:amd64 (1.6.5-1ubuntu1) ...
+Setting up ssl-cert (1.0.39) ...
+Setting up liblua5.2-0:amd64 (5.2.4-1.1build3) ...
+Setting up apache2-data (2.4.41-4ubuntu3) ...
+Setting up libaprutil1:amd64 (1.6.1-4ubuntu2) ...
+Setting up libaprutil1-ldap:amd64 (1.6.1-4ubuntu2) ...
+Setting up libaprutil1-dbd-sqlite3:amd64 (1.6.1-4ubuntu2) ...
+Setting up apache2-utils (2.4.41-4ubuntu3) ...
+Setting up apache2-bin (2.4.41-4ubuntu3) ...
+Setting up apache2 (2.4.41-4ubuntu3) ...
+Enabling module mpm_event.
+Enabling module authz_core.
+Enabling module authz_host.
+Enabling module authn_core.
+Enabling module auth_basic.
+Enabling module access_compat.
+Enabling module authn_file.
+Enabling module authz_user.
+Enabling module alias.
+Enabling module dir.
+Enabling module autoindex.
+Enabling module env.
+Enabling module mime.
+Enabling module negotiation.
+Enabling module setenvif.
+Enabling module filter.
+Enabling module deflate.
+Enabling module status.
+Enabling module reqtimeout.
+Enabling conf charset.
+Enabling conf localized-error-pages.
+Enabling conf other-vhosts-access-log.
+Enabling conf security.
+Enabling conf serve-cgi-bin.
+Enabling site 000-default.
+Created symlink /etc/systemd/system/multi-user.target.wants/apache2.service → /lib/systemd/system/apache2.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/apache-htcacheclean.service → /lib/systemd/system/apache-htcacheclean.service.
+invoke-rc.d: could not determine current runlevel
+Processing triggers for ufw (0.36-6) ...
+Processing triggers for systemd (245.4-4ubuntu3) ...
+Processing triggers for man-db (2.9.1-1) ...
+Processing triggers for libc-bin (2.31-0ubuntu9) ...
+]0;kraken@LAPTOP-N352GHLG: ~/ceccs18c08/cs232/0105/task8.1[01;32mkraken@LAPTOP-N352GHLG[00m:[01;34m~/ceccs18c08/cs232/0105/task8.1[00m$ sudo apt remove apcheache[C[C[C[C2
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  apache2-bin apache2-data apache2-utils laptop-detect libapr1 libaprutil1
+  libaprutil1-dbd-sqlite3 libaprutil1-ldap libblas3 libdirectfb-1.7-7 liblinear4
+  liblua5.2-0 liblua5.3-0 liblz1 lua-lpeg nmap-common ssl-cert
+Use 'sudo apt autoremove' to remove them.
+The following packages will be REMOVED:
+  apache2
+0 upgraded, 0 newly installed, 1 to remove and 10 not upgraded.
+After this operation, 541 kB disk space will be freed.
+Do you want to continue? [Y/n] y
+
+7[0;29r8[1A(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 59949 files and directories currently installed.)
+Removing apache2 (2.4.41-4ubuntu3) ...
+7[30;0f[42m[30mProgress: [  0%][49m[39m [.................................................................] 87[30;0f[42m[30mProgress: [ 33%][49m[39m [#####################............................................] 8invoke-rc.d: could not determine current runlevel
+ * Stopping Apache htcacheclean apache-htcacheclean       [87G [81G[ OK ]
+invoke-rc.d: initscript apache-htcacheclean, action "stop" failed.
+invoke-rc.d: could not determine current runlevel
+ * Stopping Apache httpd web server apache2       [87G  * 
+7[30;0f[42m[30mProgress: [ 67%][49m[39m [###########################################......................] 8Processing triggers for man-db (2.9.1-1) ...
+Processing triggers for ufw (0.36-6) ...
+
+7[0;30r8[1A[J]0;kraken@LAPTOP-N352GHLG: ~/ceccs18c08/cs232/0105/task8.1[01;32mkraken@LAPTOP-N352GHLG[00m:[01;34m~/ceccs18c08/cs232/0105/task8.1[00m$ sudo apt list > package
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+]0;kraken@LAPTOP-N352GHLG: ~/ceccs18c08/cs232/0105/task8.1[01;32mkraken@LAPTOP-N352GHLG[00m:[01;34m~/ceccs18c08/cs232/0105/task8.1[00m$ sudoc[K apt list > package.txt
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+]0;kraken@LAPTOP-N352GHLG: ~/ceccs18c08/cs232/0105/task8.1[01;32mkraken@LAPTOP-N352GHLG[00m:[01;34m~/ceccs18c08/cs232/0105/task8.1[00m$ exit
+exit
+
+Script done on 2020-05-01 14:47:15+05:30 [COMMAND_EXIT_CODE="0"]
