@@ -1,0 +1,359 @@
+Script started on 2020-05-07 09:18:20+05:30 [TERM="xterm-256color" TTY="/dev/tty1" COLUMNS="120" LINES="30"]
+]0;kraken@LAPTOP-N352GHLG: ~/ceccs18c08/cs232[01;32mkraken@LAPTOP-N352GHLG[00m:[01;34m~/ceccs18c08/cs232[00m$ mkdir s4
+]0;kraken@LAPTOP-N352GHLG: ~/ceccs18c08/cs232[01;32mkraken@LAPTOP-N352GHLG[00m:[01;34m~/ceccs18c08/cs232[00m$ nano s1.[K[K[Kd[Kscript1.sh
+[?2004h[?1049h[22;0;0t[1;30r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[28;55H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 4.8                                           script1.sh                                                     [1;119H(B[m[29d(B[0;7m^G(B[m Get Help    (B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut Text    (B[0;7m^J(B[m Justify     (B[0;7m^C(B[m Cur Pos     (B[0;7mM-U(B[m Undo[106G(B[0;7mM-A(B[m Mark Text[30d(B[0;7m^X(B[m Exit[30;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste Text  (B[0;7m^T(B[m To Spell    (B[0;7m^_(B[m Go To Line  (B[0;7mM-E(B[m Redo[106G(B[0;7mM-6(B[m Copy Text[28d[2d[39;49m(B[m[?12l[?25h[?25l[1;111H(B[0;7mModified(B[m[2d[36m#i/bin/bash[3d(B[0;1m[34mecho[35m -e[39m(B[m (B[0;1m[33m"Username : $USER\n"[4d[34mecho[35m -e[39m(B[m (B[0;1m[33m"LoginName : $LOGNAME\n"[5d[34mecho[35m -e[39m(B[m (B[0;1m[33m"Current Shell : $SHELL\n"[6d[34mecho[35m -e[39m(B[m (B[0;1m[33m"Home Directory : $HOME\n"[7d[34mecho[35m -e[39m(B[m (B[0;1m[33m"Operating System type :"[8d[39m(B[muname(B[0;1m[35m -o[9d[34mecho[35m -e[39m(B[m (B[0;1m[33m"\nCurrent Path Setting : $PATH\n"[10d[34mecho[35m -e[39m(B[m (B[0;1m[33m"Current Working Directory : "[11d[39m(B[mpwd[12d(B[0;1m[34mecho[35m -e[39m(B[m (B[0;1m[33m"\nNumber of users currently logged in :"[13d[39m(B[mw[42m [28d[49m(B[m[K[13;3H[?12l[?25h[?25l[28d(B[0;7mSave modified buffer?                                                                                                   [29;1H Y(B[m Yes[K[30d(B[0;7m N(B[m No  [30;16H (B[0;7m^C(B[m Cancel[K[28;23H[?12l[?25h[?25l[29d(B[0;7m^G(B[m Get Help[29;31H(B[0;7mM-D(B[m DOS Format[29;61H(B[0;7mM-A(B[m Append[29;91H(B[0;7mM-B(B[m Backup File[30d(B[0;7m^C(B[m Cancel[17G[14X[30;31H(B[0;7mM-M(B[m Mac Format[30;61H(B[0;7mM-P(B[m Prepend[30;91H(B[0;7m^T(B[m To Files[28d(B[0;7mFile Name to Write: script1.sh(B[m[28;31H[?12l[?25h[?25l[28;53H[1K (B[0;7m[ Writing... ](B[m[K[1;111H(B[0;7m        (B[m[28;52H(B[0;7m[ Wrote 12 lines ](B[m[J[30d[?12l[?25h[30;1H[?1049l[23;0;0t[?1l>[?2004l]0;kraken@LAPTOP-N352GHLG: ~/ceccs18c08/cs232[01;32mkraken@LAPTOP-N352GHLG[00m:[01;34m~/ceccs18c08/cs232[00m$ bash s[K[K[K[K[K[Knano script1.sh[1P script1.sh[1P script1.sh[1P script1.sh[1P script1.shb script1.sha script1.shs script1.shh script1.sh
+Username : kraken
+
+LoginName : kraken
+
+Current Shell : /bin/bash
+
+Home Directory : /home/kraken
+
+Operating System type :
+GNU/Linux
+
+Current Path Setting : /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/mnt/c/Program Files/WindowsApps/CanonicalGroupLimited.UbuntuonWindows_2004.2020.424.0_x64__79rhkp1fndgsc:/mnt/c/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/intel64/compiler:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/python:/mnt/c/python/Scripts:/mnt/c/Users/Amal/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Amal/AppData/Local/GitHubDesktop/bin:/snap/bin
+
+Current Working Directory : 
+/home/kraken/ceccs18c08/cs232
+
+Number of users currently logged in :
+ 09:22:05 up 5 min,  0 users,  load average: 0.52, 0.58, 0.59
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+]0;kraken@LAPTOP-N352GHLG: ~/ceccs18c08/cs232[01;32mkraken@LAPTOP-N352GHLG[00m:[01;34m~/ceccs18c08/cs232[00m$ mv[K[Kbash script1.shnano[C[C[C[C[C[C[C[C[C[C[Cbash[C[C[C[C[C[C[C[C[C[C[C[1P script1.sh[1P script1.sh[1P script1.sh[1P script1.shm script1.shv script1.sh[C script1.sh[1Pscript1.sh[C[C[C[C[C[C[C[C[C[C[C[C s4
+]0;kraken@LAPTOP-N352GHLG: ~/ceccs18c08/cs232[01;32mkraken@LAPTOP-N352GHLG[00m:[01;34m~/ceccs18c08/cs232[00m$ ls
+[0m[34;42mcs232[0m  [34;42mhttps:[0m  [34;42ms4[0m  [34;42mtask8.3[0m  work.txt
+]0;kraken@LAPTOP-N352GHLG: ~/ceccs18c08/cs232[01;32mkraken@LAPTOP-N352GHLG[00m:[01;34m~/ceccs18c08/cs232[00m$ cd s4
+]0;kraken@LAPTOP-N352GHLG: ~/ceccs18c08/cs232/s4[01;32mkraken@LAPTOP-N352GHLG[00m:[01;34m~/ceccs18c08/cs232/s4[00m$ ls
+script1.sh
+]0;kraken@LAPTOP-N352GHLG: ~/ceccs18c08/cs232/s4[01;32mkraken@LAPTOP-N352GHLG[00m:[01;34m~/ceccs18c08/cs232/s4[00m$ cd ..
+]0;kraken@LAPTOP-N352GHLG: ~/ceccs18c08/cs232[01;32mkraken@LAPTOP-N352GHLG[00m:[01;34m~/ceccs18c08/cs232[00m$ mk [Kdir s5
+]0;kraken@LAPTOP-N352GHLG: ~/ceccs18c08/cs232[01;32mkraken@LAPTOP-N352GHLG[00m:[01;34m~/ceccs18c08/cs232[00m$ cd s5
+]0;kraken@LAPTOP-N352GHLG: ~/ceccs18c08/cs232/s5[01;32mkraken@LAPTOP-N352GHLG[00m:[01;34m~/ceccs18c08/cs232/s5[00m$ nano script2.sh
+[?2004h[?1049h[22;0;0t[1;30r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[28;55H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 4.8                                           script2.sh                                                     [1;119H(B[m[29d(B[0;7m^G(B[m Get Help    (B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut Text    (B[0;7m^J(B[m Justify     (B[0;7m^C(B[m Cur Pos     (B[0;7mM-U(B[m Undo[106G(B[0;7mM-A(B[m Mark Text[30d(B[0;7m^X(B[m Exit[30;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste Text  (B[0;7m^T(B[m To Spell    (B[0;7m^_(B[m Go To Line  (B[0;7mM-E(B[m Redo[106G(B[0;7mM-6(B[m Copy Text[28d[2d[39;49m(B[m[?12l[?25h[?25l[?12l[?25h[?25l[28d[J[30d[?12l[?25h[30;1H[?1049l[23;0;0t[?1l>[?2004l]0;kraken@LAPTOP-N352GHLG: ~/ceccs18c08/cs232/s5[01;32mkraken@LAPTOP-N352GHLG[00m:[01;34m~/ceccs18c08/cs232/s5[00m$ nano script.sh[C2.sh[C[C
+[?2004h[?1049h[22;0;0t[1;30r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[28;55H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 4.8                                           script2.sh                                                     [1;119H(B[m[29d(B[0;7m^G(B[m Get Help    (B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut Text    (B[0;7m^J(B[m Justify     (B[0;7m^C(B[m Cur Pos     (B[0;7mM-U(B[m Undo[106G(B[0;7mM-A(B[m Mark Text[30d(B[0;7m^X(B[m Exit[30;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste Text  (B[0;7m^T(B[m To Spell    (B[0;7m^_(B[m Go To Line  (B[0;7mM-E(B[m Redo[106G(B[0;7mM-6(B[m Copy Text[28d[2d[39;49m(B[m[?12l[?25h[?25l[1;111H(B[0;7mModified(B[m[2d[36m#!/bin/bash[3d(B[0;1m[34mecho[35m -e[39m(B[m (B[0;1m[33m"\nOperating system version,Release number :\n"[4d[34mcat[39m(B[m /etc/os-release[5d(B[0;1m[34mecho[35m -e[39m(B[m (B[0;1m[33m"\nOperating system Kernel version : \n"[6d[39m(B[muname(B[0;1m[35m -r[7d[34mecho[35m -e[39m(B[m (B[0;1m[33m"\nAll Available shells :\n"[8d[34mcat[39m(B[m /etc/shells[9d(B[0;1m[34mecho[35m -e[39m(B[m (B[0;1m[33m"\n C.P.U Information :\n"[10d[34mcat[39m(B[m /proc/cpuinfo[11d(B[0;1m[34mecho[35m -e[39m(B[m (B[0;1m[33m"\nMemory Information :\n"[12d[34mcat[39m(B[m /proc/meminfo[13d(B[0;1m[34mecho[35m -e[39m(B[m (B[0;1m[33m"\n Hard Disk Information :\n"[14d[39m(B[mdf(B[0;1m[35m -h[15d[34mecho[35m -e[39m(B[m (B[0;1m[33m"\nFile System(Mounted) :\n"[16d[39m(B[mmount(B[0;1m[35m -l[28d[39m(B[m[K[17d[?12l[?25h[?25l[28d(B[0;7mSave modified buffer?                                                                                                   [29;1H Y(B[m Yes[K[30d(B[0;7m N(B[m No  [30;16H (B[0;7m^C(B[m Cancel[K[28;23H[?12l[?25h[?25l[29d(B[0;7m^G(B[m Get Help[29;31H(B[0;7mM-D(B[m DOS Format[29;61H(B[0;7mM-A(B[m Append[29;91H(B[0;7mM-B(B[m Backup File[30d(B[0;7m^C(B[m Cancel[17G[14X[30;31H(B[0;7mM-M(B[m Mac Format[30;61H(B[0;7mM-P(B[m Prepend[30;91H(B[0;7m^T(B[m To Files[28d(B[0;7mFile Name to Write: script2.sh(B[m[28;31H[?12l[?25h[?25l[28;53H[1K (B[0;7m[ Writing... ](B[m[K[1;111H(B[0;7m        (B[m[28;52H(B[0;7m[ Wrote 16 lines ](B[m[J[30d[?12l[?25h[30;1H[?1049l[23;0;0t[?1l>[?2004l]0;kraken@LAPTOP-N352GHLG: ~/ceccs18c08/cs232/s5[01;32mkraken@LAPTOP-N352GHLG[00m:[01;34m~/ceccs18c08/cs232/s5[00m$ bash [K[K[K[K[Knano script2.sh[1P script2.sh[1P script2.sh[1P script2.sh[1P script2.shb script2.sh[1P script2.sha script2.sh[1P script2.sha script2.sh[1P script2.shb script2.sha script2.shs script2.shh script2.sh
+
+Operating system version,Release number :
+
+NAME="Ubuntu"
+VERSION="20.04 LTS (Focal Fossa)"
+ID=ubuntu
+ID_LIKE=debian
+PRETTY_NAME="Ubuntu 20.04 LTS"
+VERSION_ID="20.04"
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+VERSION_CODENAME=focal
+UBUNTU_CODENAME=focal
+
+Operating system Kernel version : 
+
+4.4.0-18362-Microsoft
+
+All Available shells :
+
+# /etc/shells: valid login shells
+/bin/sh
+/bin/bash
+/usr/bin/bash
+/bin/rbash
+/usr/bin/rbash
+/bin/dash
+/usr/bin/dash
+/usr/bin/tmux
+/usr/bin/screen
+
+ C.P.U Information :
+
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 158
+model name	: Intel(R) Core(TM) i5-9300H CPU @ 2.40GHz
+stepping	: 10
+microcode	: 0xffffffff
+cpu MHz		: 2400.000
+cache size	: 256 KB
+physical id	: 0
+siblings	: 8
+core id		: 0
+cpu cores	: 4
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 6
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave osxsave avx f16c rdrand lahf_lm abm 3dnowprefetch fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt intel_pt ibrs ibpb stibp ssbd
+bogomips	: 4800.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 36 bits physical, 48 bits virtual
+power management:
+
+processor	: 1
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 158
+model name	: Intel(R) Core(TM) i5-9300H CPU @ 2.40GHz
+stepping	: 10
+microcode	: 0xffffffff
+cpu MHz		: 2400.000
+cache size	: 256 KB
+physical id	: 0
+siblings	: 8
+core id		: 0
+cpu cores	: 4
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 6
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave osxsave avx f16c rdrand lahf_lm abm 3dnowprefetch fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt intel_pt ibrs ibpb stibp ssbd
+bogomips	: 4800.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 36 bits physical, 48 bits virtual
+power management:
+
+processor	: 2
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 158
+model name	: Intel(R) Core(TM) i5-9300H CPU @ 2.40GHz
+stepping	: 10
+microcode	: 0xffffffff
+cpu MHz		: 2400.000
+cache size	: 256 KB
+physical id	: 0
+siblings	: 8
+core id		: 1
+cpu cores	: 4
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 6
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave osxsave avx f16c rdrand lahf_lm abm 3dnowprefetch fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt intel_pt ibrs ibpb stibp ssbd
+bogomips	: 4800.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 36 bits physical, 48 bits virtual
+power management:
+
+processor	: 3
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 158
+model name	: Intel(R) Core(TM) i5-9300H CPU @ 2.40GHz
+stepping	: 10
+microcode	: 0xffffffff
+cpu MHz		: 2400.000
+cache size	: 256 KB
+physical id	: 0
+siblings	: 8
+core id		: 1
+cpu cores	: 4
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 6
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave osxsave avx f16c rdrand lahf_lm abm 3dnowprefetch fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt intel_pt ibrs ibpb stibp ssbd
+bogomips	: 4800.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 36 bits physical, 48 bits virtual
+power management:
+
+processor	: 4
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 158
+model name	: Intel(R) Core(TM) i5-9300H CPU @ 2.40GHz
+stepping	: 10
+microcode	: 0xffffffff
+cpu MHz		: 2400.000
+cache size	: 256 KB
+physical id	: 0
+siblings	: 8
+core id		: 2
+cpu cores	: 4
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 6
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave osxsave avx f16c rdrand lahf_lm abm 3dnowprefetch fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt intel_pt ibrs ibpb stibp ssbd
+bogomips	: 4800.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 36 bits physical, 48 bits virtual
+power management:
+
+processor	: 5
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 158
+model name	: Intel(R) Core(TM) i5-9300H CPU @ 2.40GHz
+stepping	: 10
+microcode	: 0xffffffff
+cpu MHz		: 2400.000
+cache size	: 256 KB
+physical id	: 0
+siblings	: 8
+core id		: 2
+cpu cores	: 4
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 6
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave osxsave avx f16c rdrand lahf_lm abm 3dnowprefetch fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt intel_pt ibrs ibpb stibp ssbd
+bogomips	: 4800.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 36 bits physical, 48 bits virtual
+power management:
+
+processor	: 6
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 158
+model name	: Intel(R) Core(TM) i5-9300H CPU @ 2.40GHz
+stepping	: 10
+microcode	: 0xffffffff
+cpu MHz		: 2400.000
+cache size	: 256 KB
+physical id	: 0
+siblings	: 8
+core id		: 3
+cpu cores	: 4
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 6
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave osxsave avx f16c rdrand lahf_lm abm 3dnowprefetch fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt intel_pt ibrs ibpb stibp ssbd
+bogomips	: 4800.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 36 bits physical, 48 bits virtual
+power management:
+
+processor	: 7
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 158
+model name	: Intel(R) Core(TM) i5-9300H CPU @ 2.40GHz
+stepping	: 10
+microcode	: 0xffffffff
+cpu MHz		: 2400.000
+cache size	: 256 KB
+physical id	: 0
+siblings	: 8
+core id		: 3
+cpu cores	: 4
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 6
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave osxsave avx f16c rdrand lahf_lm abm 3dnowprefetch fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt intel_pt ibrs ibpb stibp ssbd
+bogomips	: 4800.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 36 bits physical, 48 bits virtual
+power management:
+
+
+Memory Information :
+
+MemTotal:        8306932 kB
+MemFree:         3262628 kB
+Buffers:           34032 kB
+Cached:           188576 kB
+SwapCached:            0 kB
+Active:           167556 kB
+Inactive:         157876 kB
+Active(anon):     103104 kB
+Inactive(anon):    17440 kB
+Active(file):      64452 kB
+Inactive(file):   140436 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+SwapTotal:      25165824 kB
+SwapFree:       24783280 kB
+Dirty:                 0 kB
+Writeback:             0 kB
+AnonPages:        102824 kB
+Mapped:            71404 kB
+Shmem:             17720 kB
+Slab:              13868 kB
+SReclaimable:       6744 kB
+SUnreclaim:         7124 kB
+KernelStack:        2848 kB
+PageTables:         2524 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:      515524 kB
+Committed_AS:    3450064 kB
+VmallocTotal:     122880 kB
+VmallocUsed:       21296 kB
+VmallocChunk:      66044 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:      2048 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+DirectMap4k:       12280 kB
+DirectMap4M:      897024 kB
+
+ Hard Disk Information :
+
+Filesystem      Size  Used Avail Use% Mounted on
+rootfs          447G  184G  263G  42% /
+none            447G  184G  263G  42% /dev
+none            447G  184G  263G  42% /run
+none            447G  184G  263G  42% /run/lock
+none            447G  184G  263G  42% /run/shm
+none            447G  184G  263G  42% /run/user
+cgroup          447G  184G  263G  42% /sys/fs/cgroup
+C:\             447G  184G  263G  42% /mnt/c
+D:\             466G  250G  217G  54% /mnt/d
+E:\             466G  192G  274G  42% /mnt/e
+
+File System(Mounted) :
+
+rootfs on / type lxfs (rw,noatime)
+none on /dev type tmpfs (rw,noatime,mode=755)
+sysfs on /sys type sysfs (rw,nosuid,nodev,noexec,noatime)
+proc on /proc type proc (rw,nosuid,nodev,noexec,noatime)
+devpts on /dev/pts type devpts (rw,nosuid,noexec,noatime,gid=5,mode=620)
+none on /run type tmpfs (rw,nosuid,noexec,noatime,mode=755)
+none on /run/lock type tmpfs (rw,nosuid,nodev,noexec,noatime)
+none on /run/shm type tmpfs (rw,nosuid,nodev,noatime)
+none on /run/user type tmpfs (rw,nosuid,nodev,noexec,noatime,mode=755)
+binfmt_misc on /proc/sys/fs/binfmt_misc type binfmt_misc (rw,relatime)
+cgroup on /sys/fs/cgroup type tmpfs (rw,relatime,mode=755)
+cgroup on /sys/fs/cgroup/devices type cgroup (rw,relatime,devices)
+C:\ on /mnt/c type drvfs (rw,noatime,uid=1000,gid=1000,case=off)
+D:\ on /mnt/d type drvfs (rw,noatime,uid=1000,gid=1000,case=off)
+E:\ on /mnt/e type drvfs (rw,noatime,uid=1000,gid=1000,case=off)
+]0;kraken@LAPTOP-N352GHLG: ~/ceccs18c08/cs232/s5[01;32mkraken@LAPTOP-N352GHLG[00m:[01;34m~/ceccs18c08/cs232/s5[00m$ exit
+exit
+
+Script done on 2020-05-07 09:39:15+05:30 [COMMAND_EXIT_CODE="0"]
